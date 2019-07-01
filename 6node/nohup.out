@@ -1,0 +1,300 @@
+0.001,2,20,29,1.8421052632,1.8421052632,0.0,1.3085020243,0.3891379053,2.362566345962186,125.20985612086952
+0.002,2,10,19,1.8421052632,1.8421052632,0.0,1.3085020243,0.3891379053,2.362566345962186,98.96713655628264
+0.003,1,8,9,1.8421052632,1.8421052632,0.0,1.3085020243,0.3891379053,2.362566345962186,42.91575036011636
+0.004,1,8,9,1.8421052632,1.8421052632,0.0,1.3085020243,0.3891379053,2.362566345962186,41.3076696600765
+0.005,1,8,9,1.8421052632,1.8421052632,0.0,1.3085020243,0.3891379053,2.362566345962186,41.96338617429137
+0.006,1,8,9,1.8421052632,1.8421052632,0.0,1.3085020243,0.3891379053,2.362566345962186,43.77425830438733
+0.007,1,8,9,1.8421052632,1.8421052632,0.0,1.3085020243,0.3891379053,2.362566345962186,44.018046418204904
+0.008,1,8,9,1.8421052632,1.8421052632,0.0,1.3085020243,0.3891379053,2.362566345962186,42.84482472203672
+0.009,1,8,9,1.8421052632,1.8421052632,0.0,1.3085020243,0.3891379053,2.362566345962186,43.334083274006844
+0.01,1,8,9,1.8421052632,1.8421052632,0.0,1.3085020243,0.3891379053,2.362566345962186,46.412126364186406
+0.02,1,7,8,1.6564685315,1.6564685315,0.0,0.6787587413,0.3891379053,0.7442627203760097,38.21536913141608
+0.03,1,6,7,1.3050699301,1.1570850202,-0.12789458623742359,1.3050699301,0.3891379053,2.3537466084006287,30.25979838334024
+0.04,1,4,5,0.6680969207,1.1570850202,0.42260343100412734,0.4468899522,0.3891379053,0.1484102322426723,27.983698919415474
+0.05,1,3,4,0.6590500642,0.6768506632,0.026299152778905002,0.6313730439,0.3891379053,0.6224917575512274,35.629646914079785
+0.06,1,2,3,0.5979020979,0.6234817814,0.041027154703000196,0.5979020979,0.3891379053,0.5364786872639828,19.039103822782636
+0.07,1,1,2,0.4246974451,0.4246974451,0.0,0.4160839161,0.3891379053,0.06924540229311871,20.557049164548516
+0.08,0,1,1,0.3891379053,0.3891379053,0.0,0.3891379053,0.3891379053,0.0,15.796303840354085
+0.09,0,1,1,0.3891379053,0.3891379053,0.0,0.3891379053,0.3891379053,0.0,15.652222314849496
+0.1,0,1,1,0.3891379053,0.3891379053,0.0,0.3891379053,0.3891379053,0.0,16.31922203861177
+0.2,0,1,1,0.3891379053,0.3891379053,0.0,0.3891379053,0.3891379053,0.0,15.831954173743725
+0.001,2,47,59,1.6800699301,1.6800699301,0.0,0.555465587,0.2777327935,1.0,309.33513673581183
+0.002,2,36,48,1.6800699301,1.6800699301,0.0,0.555465587,0.2777327935,1.0,247.00522398017347
+simulation_6b.sh: line 3: 27054 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6b.sh: line 3: 27170 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6b.sh: line 3: 27186 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6b.sh: line 3: 27205 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6b.sh: line 3: 27223 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6b.sh: line 3: 27239 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6b.sh: line 3: 27257 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6b.sh: line 3: 27275 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6b.sh: line 3: 27295 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6b.sh: line 3: 27311 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6b.sh: line 3: 27328 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6b.sh: line 3: 27344 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6b.sh: line 3: 27360 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6b.sh: line 3: 27376 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6b.sh: line 3: 27392 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6b.sh: line 3: 27409 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6b.sh: line 3: 27425 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6b.sh: line 3: 27441 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6a.sh: line 3: 27659 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6b.sh: line 3: 27675 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6b.sh: line 3: 30380 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6a.sh: line 3: 30365 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6b.sh: line 3: 30396 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6a.sh: line 3: 30397 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6b.sh: line 3: 30430 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6a.sh: line 3: 30429 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6b.sh: line 3: 30463 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6a.sh: line 3: 30464 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6b.sh: line 3: 30494 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6a.sh: line 3: 30495 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6a.sh: line 3: 30526 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6b.sh: line 3: 30525 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6b.sh: line 3: 30557 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6a.sh: line 3: 30556 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6b.sh: line 3: 30587 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6a.sh: line 3: 30588 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6b.sh: line 3: 30618 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6a.sh: line 3: 30619 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6a.sh: line 3: 30650 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6b.sh: line 3: 30649 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6a.sh: line 3: 30680 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6b.sh: line 3: 30681 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6a.sh: line 3: 30711 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6b.sh: line 3: 30712 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6b.sh: line 3: 30743 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6a.sh: line 3: 30742 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6a.sh: line 3: 30774 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6b.sh: line 3: 30773 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6b.sh: line 3: 30805 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6a.sh: line 3: 30804 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6b.sh: line 3: 30836 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6a.sh: line 3: 30835 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6b.sh: line 3: 30866 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6a.sh: line 3: 30867 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6b.sh: line 3: 30898 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6a.sh: line 3: 30897 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6a.sh: line 3: 30928 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6b.sh: line 3: 30929 Terminated              python3 main_6b.py 0.01 $eps
+0.001,2,20,29,1.0550607287,1.0550607287,0.0,0.4753036437,0.2104328165,1.2586954430655544,61.67887904495001
+0.002,2,10,19,1.0550607287,1.0550607287,0.0,0.4753036437,0.2104328165,1.2586954430655544,41.88475979492068
+0.003,1,8,9,1.0550607287,1.0550607287,0.0,0.4753036437,0.2104328165,1.2586954430655544,22.813206240534782
+0.004,1,8,9,1.0550607287,1.0550607287,0.0,0.4753036437,0.2104328165,1.2586954430655544,22.894640473648906
+0.005,1,8,9,1.0550607287,1.0550607287,0.0,0.4753036437,0.2104328165,1.2586954430655544,22.06659241952002
+0.006,1,8,9,1.0550607287,1.0550607287,0.0,0.4753036437,0.2104328165,1.2586954430655544,22.645528746768832
+0.007,1,8,9,1.0550607287,1.0550607287,0.0,0.4753036437,0.2104328165,1.2586954430655544,22.205419067293406
+0.008,1,8,9,1.0550607287,1.0550607287,0.0,0.4753036437,0.2104328165,1.2586954430655544,22.47710365243256
+0.009,1,8,9,1.0550607287,1.0550607287,0.0,0.4753036437,0.2104328165,1.2586954430655544,22.62802886776626
+0.01,1,8,9,1.0550607287,1.0550607287,0.0,0.4753036437,0.2104328165,1.2586954430655544,22.857239039614797
+0.02,1,7,8,0.8050699301,0.8050699301,0.0,0.4753036437,0.2104328165,1.2586954430655544,21.71601458825171
+0.03,1,6,7,0.3645699615,0.6834008097,0.46653566058834595,0.3062005721,0.2104328165,0.4550989583889355,23.196562260389328
+0.04,1,4,5,0.3548951049,0.4694055944,0.2439478584535592,0.2684210526,0.2104328165,0.27556650651967096,17.071845332160592
+0.05,1,3,4,0.3548951049,0.4753036437,0.25332971963496864,0.3548951049,0.2104328165,0.6865007597329762,11.278393706306815
+0.06,1,2,3,0.223062201,0.223062201,0.0,0.2104328165,0.2104328165,0.0,16.149631537497044
+0.07,1,1,2,0.223062201,0.223062201,0.0,0.2104328165,0.2104328165,0.0,14.53031168691814
+0.08,0,1,1,0.2104328165,0.2104328165,0.0,0.2104328165,0.2104328165,0.0,12.363013736903667
+0.09,0,1,1,0.2104328165,0.2104328165,0.0,0.2104328165,0.2104328165,0.0,11.741978155449033
+0.1,0,1,1,0.2104328165,0.2104328165,0.0,0.2104328165,0.2104328165,0.0,12.67524347640574
+0.2,0,1,1,0.2104328165,0.2104328165,0.0,0.2104328165,0.2104328165,0.0,12.531503312289715
+0.001,2,47,59,0.8732517483,0.8732517483,0.0,0.4801619433,0.1642737104,1.9229384429853362,127.76852307841182
+0.002,2,36,48,0.8732517483,0.8732517483,0.0,0.4801619433,0.1642737104,1.9229384429853362,105.90897888317704
+0.003,2,25,37,0.8732517483,0.8732517483,0.0,0.4801619433,0.1642737104,1.9229384429853362,86.33191048912704
+0.004,2,14,26,0.8732517483,0.8732517483,0.0,0.4801619433,0.1642737104,1.9229384429853362,61.38420159928501
+0.005,2,3,15,0.8732517483,0.8732517483,0.0,0.4801619433,0.1642737104,1.9229384429853362,38.546308770775795
+0.006,1,11,12,0.8732517483,0.8732517483,0.0,0.4801619433,0.1642737104,1.9229384429853362,33.526355823501945
+0.007,1,11,12,0.8732517483,0.8732517483,0.0,0.4801619433,0.1642737104,1.9229384429853362,34.40345345251262
+0.008,1,11,12,0.8732517483,0.8732517483,0.0,0.4801619433,0.1642737104,1.9229384429853362,33.84155264869332
+0.009,1,11,12,0.8732517483,0.8732517483,0.0,0.4801619433,0.1642737104,1.9229384429853362,34.11584672704339
+0.01,1,11,12,0.8732517483,0.8732517483,0.0,0.4801619433,0.1642737104,1.9229384429853362,33.39102295413613
+0.02,1,10,11,0.4955465587,0.5593175853,0.11401577257006013,0.4056680162,0.1642737104,1.469464013518745,42.47477576509118
+0.03,1,9,10,0.4278215223,0.5593175853,0.2351008916150379,0.223890632,0.1642737104,0.3629121266868275,68.92986385151744
+0.04,1,8,9,0.4278215223,0.5593175853,0.2351008916150379,0.4056680162,0.1642737104,1.469464013518745,66.26424590498209
+0.05,1,7,8,0.4056680162,0.223890632,-0.8119025909042946,0.4056680162,0.1642737104,1.469464013518745,45.17834065295756
+simulation_6b.sh: line 3: 31597 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6b.sh: line 3: 31614 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6b.sh: line 3: 31630 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6b.sh: line 3: 31646 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6b.sh: line 3: 31662 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6b.sh: line 3: 31678 Terminated              python3 main_6b.py 0.01 $eps
+simulation_6a.sh: line 3: 31712 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6a.sh: line 3: 31728 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6a.sh: line 3: 31744 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6a.sh: line 3: 31760 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6a.sh: line 3: 31776 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6a.sh: line 3: 31792 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6a.sh: line 3: 31808 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6a.sh: line 3: 31817 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6a.sh: line 3: 31833 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6a.sh: line 3: 31849 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6a.sh: line 3: 31865 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6a.sh: line 3: 31881 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6a.sh: line 3: 31897 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6a.sh: line 3: 31906 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6a.sh: line 3: 31922 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6a.sh: line 3: 31938 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6a.sh: line 3: 31954 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6a.sh: line 3: 31970 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6a.sh: line 3: 31987 Terminated              python3 main_6a.py 0.01 $eps
+simulation_6a.sh: line 3: 32003 Terminated              python3 main_6a.py 0.01 $eps
+0.001,2,20,29,0.7991902834,0.7991902834,0.0,0.7991902834,0.1809569378,3.416466663926936,44.269712164998055
+0.002,2,10,19,0.7991902834,0.7991902834,0.0,0.7991902834,0.1809569378,3.416466663926936,30.2335914503783
+0.003,1,8,9,0.7991902834,0.7991902834,0.0,0.7991902834,0.1809569378,3.416466663926936,16.93922632932663
+0.004,1,8,9,0.7991902834,0.7991902834,0.0,0.7991902834,0.1809569378,3.416466663926936,16.652077930048108
+0.005,1,8,9,0.7991902834,0.7991902834,0.0,0.7991902834,0.1809569378,3.416466663926936,16.481254763901234
+0.006,1,8,9,0.7991902834,0.7991902834,0.0,0.7991902834,0.1809569378,3.416466663926936,16.716112654656172
+0.007,1,8,9,0.7991902834,0.7991902834,0.0,0.7991902834,0.1809569378,3.416466663926936,16.28440287709236
+0.008,1,8,9,0.7991902834,0.7991902834,0.0,0.7991902834,0.1809569378,3.416466663926936,16.613951535895467
+0.009,1,8,9,0.7991902834,0.7991902834,0.0,0.7991902834,0.1809569378,3.416466663926936,16.450437678024173
+0.01,1,8,9,0.7991902834,0.7991902834,0.0,0.7991902834,0.1809569378,3.416466663926936,16.64965266175568
+0.02,1,7,8,0.6267482517,0.6267482517,0.0,0.5559440559,0.1809569378,2.072245047130765,15.696014484390616
+0.03,1,6,7,0.5910931174,0.620242915,0.04699738907940596,0.2459563543,0.1809569378,0.3591982561720826,13.133464632555842
+0.04,1,4,5,0.2580231065,0.4694055944,0.45031949005676364,0.2060728745,0.1809569378,0.1387951023340096,14.830251079052687
+0.05,1,3,4,0.412145749,0.4694055944,0.1219837302390702,0.412145749,0.1809569378,1.2775902046680192,8.5411438010633
+0.06,1,2,3,0.2580231065,0.4694055944,0.45031949005676364,0.2060728745,0.1809569378,0.1387951023340096,8.850803786888719
+0.07,1,1,2,0.2023106547,0.2023106547,0.0,0.1809569378,0.1809569378,0.0,10.969882240518928
+0.08,0,1,1,0.1809569378,0.1809569378,0.0,0.1809569378,0.1809569378,0.0,8.79568556509912
+0.09,0,1,1,0.1809569378,0.1809569378,0.0,0.1809569378,0.1809569378,0.0,8.89942885749042
+0.1,0,1,1,0.1809569378,0.1809569378,0.0,0.1809569378,0.1809569378,0.0,8.828756358474493
+0.2,0,1,1,0.1809569378,0.1809569378,0.0,0.1809569378,0.1809569378,0.0,9.043497135862708
+0.001,2,47,59,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,131.46012942306697
+0.002,2,36,48,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,102.88448382914066
+0.003,2,25,37,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,80.65540427714586
+0.004,2,14,26,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,59.922700045630336
+0.005,2,3,15,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,37.98300529643893
+0.006,1,11,12,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,31.72377209365368
+0.007,1,11,12,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,32.22275176458061
+0.008,1,11,12,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,32.04639912955463
+0.009,1,11,12,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,31.650814885273576
+0.01,1,11,12,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,31.277048802003264
+0.02,1,10,11,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,30.15128344297409
+0.03,1,9,10,0.323272091,0.3619422572,0.10684070575001106,0.2894649934,0.1363636364,1.1227432843672684,65.11243156529963
+0.04,1,8,9,0.3425101215,0.3619422572,0.05368849675174104,0.3425101215,0.1363636364,1.5117408903302025,49.29318669997156
+0.05,1,7,8,0.1806364859,0.3175407925,0.4311392735470357,0.1806364859,0.1363636364,0.32466756291342214,33.35587126761675
+0.06,1,5,6,0.1806364859,0.1806364859,0.0,0.1712550607,0.1363636364,0.25587044479843457,32.86181568726897
+0.07,1,4,5,0.1806364859,0.1806364859,0.0,0.1518377409,0.1363636364,0.11347676630307289,46.3746844381094
+0.08,1,3,4,0.1455103359,0.1455103359,0.0,0.1434940555,0.1363636364,0.05228974005272279,39.75466796010733
+0.09,1,2,3,0.1538616104,0.1363636364,-0.12831847596578175,0.1428493142,0.1363636364,0.047561637187316944,38.20042263716459
+0.1,1,1,2,0.1363636364,0.1363636364,0.0,0.1363636364,0.1363636364,0.0,26.566912848502398
+0.2,0,1,1,0.1363636364,0.1363636364,0.0,0.1363636364,0.1363636364,0.0,18.87816173583269
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+./result6a_05_i20_c50_tr40.txt
+Traceback (most recent call last):
+  File "main_6a.py", line 500, in <module>
+    with open(file_path,'a',encoding="utf-8") as f:
+NameError: name 'file_path' is not defined
+./result6a_05_i20_c50_tr40.txt
+Traceback (most recent call last):
+  File "main_6a.py", line 500, in <module>
+    with open(file_path,'a',encoding="utf-8") as f:
+NameError: name 'file_path' is not defined
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+./result6a_05_i20_c50_tr40.txt
+Traceback (most recent call last):
+  File "main_6a.py", line 500, in <module>
+    with open(file_path,'a',encoding="utf-8") as f:
+NameError: name 'file_path' is not defined
+./result6a_05_i20_c50_tr40.txt
+Traceback (most recent call last):
+  File "main_6a.py", line 500, in <module>
+    with open(file_path,'a',encoding="utf-8") as f:
+NameError: name 'file_path' is not defined
+./result6a_05_i20_c50_tr40.txt
+Traceback (most recent call last):
+  File "main_6a.py", line 500, in <module>
+    with open(file_path,'a',encoding="utf-8") as f:
+NameError: name 'file_path' is not defined
+./result6a_05_i20_c50_tr40.txt
+Traceback (most recent call last):
+  File "main_6a.py", line 500, in <module>
+    with open(file_path,'a',encoding="utf-8") as f:
+NameError: name 'file_path' is not defined
+./result6a_05_i20_c50_tr40.txt
+Traceback (most recent call last):
+  File "main_6a.py", line 500, in <module>
+    with open(file_path,'a',encoding="utf-8") as f:
+NameError: name 'file_path' is not defined
+./result6a_05_i20_c50_tr40.txt
+Traceback (most recent call last):
+  File "main_6a.py", line 500, in <module>
+    with open(file_path,'a',encoding="utf-8") as f:
+NameError: name 'file_path' is not defined
+./result6a_05_i20_c50_tr40.txt
+Traceback (most recent call last):
+  File "main_6a.py", line 500, in <module>
+    with open(file_path,'a',encoding="utf-8") as f:
+NameError: name 'file_path' is not defined
+./result6a_05_i20_c50_tr40.txt
+Traceback (most recent call last):
+  File "main_6a.py", line 500, in <module>
+    with open(file_path,'a',encoding="utf-8") as f:
+NameError: name 'file_path' is not defined
+./result6a_05_i20_c50_tr40.txt
+Traceback (most recent call last):
+  File "main_6a.py", line 500, in <module>
+    with open(file_path,'a',encoding="utf-8") as f:
+NameError: name 'file_path' is not defined
+./result6a_05_i20_c50_tr40.txt
+Traceback (most recent call last):
+  File "main_6a.py", line 500, in <module>
+    with open(file_path,'a',encoding="utf-8") as f:
+NameError: name 'file_path' is not defined
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
