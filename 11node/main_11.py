@@ -44,7 +44,7 @@ def setUniverse(input_graph):
                 universe.append((i,j))
     GraphSet.set_universe(universe)
 
-def calc_f(nk,p,eps):
+def calc_f(nk):
     right_sum = 0.0
     for k in range(0,E+1):
         right_sum += nk[k]*((p**k)*((1-p)**(E-k)))
@@ -64,7 +64,7 @@ def calc_f(nk,p,eps):
 
     return y+1
 
-def calc_mnp(nk,f,p,eps):
+def calc_mnp(nk,f):
     sum1=0.0
     sum2=0.0
     for k in range(0,E):
@@ -151,8 +151,8 @@ def congestion_eval(G_cap,universe,candidate,traffic,weights):
     return r
 
 #initialize parameters
-N = 6
-E = 8
+N = 11
+E = 14
 p = float(args[1])
 eps = float(args[2])
 U_c = 100
@@ -164,12 +164,18 @@ delta = 1e-10
 # --------------Setting candidates of failure pattern ---------------------------
 #input graph
 G_connect =[
-        [0,1,0,0,0,1],
-        [1,0,1,0,1,0],
-        [0,1,0,1,0,1],
-        [0,0,1,0,1,0],
-        [0,1,0,1,0,1],
-        [1,0,1,0,1,0]]
+[0,1,1,0,0,0,0,0,0,0,0],
+[1,0,1,1,0,0,0,0,0,0,0],
+[1,1,0,0,0,1,0,0,0,0,0],
+[0,1,0,0,1,0,0,0,0,0,0],
+[0,0,0,1,0,1,0,0,0,0,1],
+[0,0,1,0,1,0,1,0,0,0,0],
+[0,0,0,0,0,1,0,1,0,0,1],
+[0,0,0,0,0,0,1,0,1,0,0],
+[0,0,0,0,0,0,0,1,0,1,0],
+[0,0,0,0,0,0,0,0,1,0,1],
+[0,0,0,0,1,0,1,0,0,1,0],
+        ]
 G_cap = np.zeros((N,N))
 for i in range(0,N):
     for j in range(0,N):
@@ -216,7 +222,7 @@ for i in target_graph: #initialize all link weight as 1
 
 #------------Setting traffic demand------------------
 tr=[]
-for i in range(40):
+for i in range(100):
     s = np.random.randint(0,N-1)
     d = np.random.randint(0,N-1)
     while (s == d):
@@ -228,8 +234,8 @@ for i in range(40):
 # print('\n')
 
 #---------Setting failure patterns---------------
-f = calc_f(nk,p,eps)
-m_np = calc_mnp(nk,f,p,eps)
+f = calc_f(nk)
+m_np = calc_mnp(nk,f)
 # print("f = ", f, " m = ", m_np)
 # file = open('output.txt','a')
 # file.write("p ={0}, eps = {1}, f = {2}, m = {3}　\n".format(p, eps, f, m_np))
@@ -251,6 +257,9 @@ w_opt_so = copy.deepcopy(weights)
 #-----Set F_mf in PSO-M  and non-failure case in SO-----
 cand_mf = GraphSet()
 cand_so = GraphSet()
+
+
+
 #Setting for F_mf
 for i in range(0,f):
     cand_mf.update(gc.len(E-i))
@@ -494,11 +503,7 @@ ecution_time = time.perf_counter() - start_time
 data = [eps,f,m_np,cand_mf.len(),alpha_mf,alpha_so,alpha,beta_mf,beta_so,beta,ecution_time]
 # print(data)
 data_str = ','.join(map(str,data))
-file_path = './result6a_{0}_i{1}_c{2}_tr{3}_fix.txt'.format(str(p).split('.')[1],I_max,C_max,len(tr))
-# print(file)
-# print(data_str)
+file_path = './result11_{0}_i{1}_c{2}_tr{3}_fix.txt'.format(str(p).split('.')[1],I_max,C_max,len(tr))
 with open(file_path,'a',encoding="utf-8") as f:
-    # f.write('epsilon,Gamma,m_np,F_mf,alpha_PSO-M,alpha_SO,alpha,beta_PSO-M,beta_SO,beta,Time[s]')
-    # f.write('\n')
     f.write(data_str)
     f.write('\n')

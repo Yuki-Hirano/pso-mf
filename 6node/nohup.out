@@ -298,3 +298,199 @@ Traceback (most recent call last):
   File "main_6a.py", line 261, in <module>
     rand_graph = next(cand_select.rand_iter())
 StopIteration
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_6b.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_6b.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_6b.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+simulation_6b_05.sh: line 3:  1164 Terminated              python3 main_6b.py 0.05 $eps
+simulation_6b_05.sh: line 3:  1184 Terminated              python3 main_6b.py 0.05 $eps
+simulation_6b_05.sh: line 3:  1200 Terminated              python3 main_6b.py 0.05 $eps
+simulation_6b_05.sh: line 3:  1216 Terminated              python3 main_6b.py 0.05 $eps
+simulation_6b_05.sh: line 3:  1232 Terminated              python3 main_6b.py 0.05 $eps
+simulation_6b_05.sh: line 3:  1248 Terminated              python3 main_6b.py 0.05 $eps
+simulation_6b_05.sh: line 3:  1264 Terminated              python3 main_6b.py 0.05 $eps
+simulation_6b_05.sh: line 3:  1280 Terminated              python3 main_6b.py 0.05 $eps
+simulation_6b_05.sh: line 3:  1296 Terminated              python3 main_6b.py 0.05 $eps
+simulation_6b_05.sh: line 3:  1312 Terminated              python3 main_6b.py 0.05 $eps
+simulation_6b_05.sh: line 3:  1328 Terminated              python3 main_6b.py 0.05 $eps
+simulation_6b_05.sh: line 3:  1344 Terminated              python3 main_6b.py 0.05 $eps
+simulation_6b_05.sh: line 3:  1361 Terminated              python3 main_6b.py 0.05 $eps
+simulation_6b_05.sh: line 3:  1377 Terminated              python3 main_6b.py 0.05 $eps
+simulation_6b_05.sh: line 3:  1393 Terminated              python3 main_6b.py 0.05 $eps
+simulation_6b_05.sh: line 3:  1402 Terminated              python3 main_6b.py 0.05 $eps
+simulation_6b_05.sh: line 3:  1418 Terminated              python3 main_6b.py 0.05 $eps
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_6a.py", line 261, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+0.2,0,1,1,0.1363636364,0.1363636364,0.0,0.1363636364,0.1363636364,0.0,18.830786572769284
+0.1,0,1,1,0.1363636364,0.1363636364,0.0,0.1363636364,0.1363636364,0.0,18.743498707190156
+0.09,0,1,1,0.1363636364,0.1363636364,0.0,0.1363636364,0.1363636364,0.0,18.714369170367718
+0.08,0,1,1,0.1363636364,0.1363636364,0.0,0.1363636364,0.1363636364,0.0,19.26164823397994
+0.07,1,2,3,0.1538616104,0.1363636364,-0.12831847596578175,0.1428493142,0.1363636364,0.047561637187316944,39.20469327457249
+0.06,1,3,4,0.1455103359,0.1455103359,0.0,0.1434940555,0.1363636364,0.05228974005272279,39.40080250054598
+0.05,1,5,6,0.1806364859,0.1806364859,0.0,0.1712550607,0.1363636364,0.25587044479843457,33.38041478767991
+0.04,1,6,7,0.1636343709,0.3175407925,0.48468236281799926,0.1434940555,0.1363636364,0.05228974005272279,64.91287520714104
+0.03,1,8,9,0.3425101215,0.3619422572,0.05368849675174104,0.3425101215,0.1363636364,1.5117408903302025,48.797364220023155
+0.02,1,9,10,0.323272091,0.3619422572,0.10684070575001106,0.2894649934,0.1363636364,1.1227432843672684,64.54932693950832
+0.01,1,10,11,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,29.196763392537832
+0.009,1,11,12,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,31.915967635810375
+0.008,1,11,12,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,30.84563133493066
+0.007,1,11,12,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,31.894884057343006
+0.006,1,11,12,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,31.53760069422424
+0.005,1,11,12,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,32.74504237808287
+0.004,1,11,12,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,31.83248425088823
+0.003,1,11,12,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,30.655844939872622
+0.002,2,20,32,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,72.48281126841903
+0.001,2,39,51,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,112.23593886941671
+Traceback (most recent call last):
+  File "main_6b.py", line 497, in <module>
+    data = [eps,f,m_np,eval_cand.len(),alpha_mf,alpha_so,alpha,beta_mf,beta_so,beta,ecution_time]
+NameError: name 'eval_cand' is not defined
+Traceback (most recent call last):
+  File "main_6b.py", line 497, in <module>
+    data = [eps,f,m_np,eval_cand.len(),alpha_mf,alpha_so,alpha,beta_mf,beta_so,beta,ecution_time]
+NameError: name 'eval_cand' is not defined
+Traceback (most recent call last):
+  File "main_6a.py", line 494, in <module>
+    data = [eps,f,m_np,eval_cand.len(),alpha_mf,alpha_so,alpha,beta_mf,beta_so,beta,ecution_time]
+NameError: name 'eval_cand' is not defined
+Traceback (most recent call last):
+  File "main_6a.py", line 494, in <module>
+    data = [eps,f,m_np,eval_cand.len(),alpha_mf,alpha_so,alpha,beta_mf,beta_so,beta,ecution_time]
+NameError: name 'eval_cand' is not defined
+Traceback (most recent call last):
+  File "main_6b.py", line 497, in <module>
+    data = [eps,f,m_np,eval_cand.len(),alpha_mf,alpha_so,alpha,beta_mf,beta_so,beta,ecution_time]
+NameError: name 'eval_cand' is not defined
+                                                                                                                                                                                                                                                                                                                                                                                                                                                      Traceback (most recent call last):
+  File "main_6b.py", line 497, in <module>
+    data = [eps,f,m_np,eval_cand.len(),alpha_mf,alpha_so,alpha,beta_mf,beta_so,beta,ecution_time]
+NameError: name 'eval_cand' is not defined
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Traceback (most recent call last):
+  File "main_6b.py", line 497, in <module>
+    data = [eps,f,m_np,eval_cand.len(),alpha_mf,alpha_so,alpha,beta_mf,beta_so,beta,ecution_time]
+NameError: name 'eval_cand' is not defined
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Traceback (most recent call last):
+  File "main_6b.py", line 497, in <module>
+    data = [eps,f,m_np,eval_cand.len(),alpha_mf,alpha_so,alpha,beta_mf,beta_so,beta,ecution_time]
+NameError: name 'eval_cand' is not defined
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Traceback (most recent call last):
+  File "main_6b.py", line 497, in <module>
+    data = [eps,f,m_np,eval_cand.len(),alpha_mf,alpha_so,alpha,beta_mf,beta_so,beta,ecution_time]
+NameError: name 'eval_cand' is not defined
+Traceback (most recent call last):
+  File "main_6a.py", line 494, in <module>
+    data = [eps,f,m_np,eval_cand.len(),alpha_mf,alpha_so,alpha,beta_mf,beta_so,beta,ecution_time]
+NameError: name 'eval_cand' is not defined
+Traceback (most recent call last):
+  File "main_6a.py", line 494, in <module>
+    data = [eps,f,m_np,eval_cand.len(),alpha_mf,alpha_so,alpha,beta_mf,beta_so,beta,ecution_time]
+NameError: name 'eval_cand' is not defined
+Traceback (most recent call last):
+  File "main_6a.py", line 494, in <module>
+    data = [eps,f,m_np,eval_cand.len(),alpha_mf,alpha_so,alpha,beta_mf,beta_so,beta,ecution_time]
+NameError: name 'eval_cand' is not defined
+Traceback (most recent call last):
+  File "main_6a.py", line 494, in <module>
+    data = [eps,f,m_np,eval_cand.len(),alpha_mf,alpha_so,alpha,beta_mf,beta_so,beta,ecution_time]
+NameError: name 'eval_cand' is not defined
+Traceback (most recent call last):
+  File "main_6b.py", line 497, in <module>
+    data = [eps,f,m_np,eval_cand.len(),alpha_mf,alpha_so,alpha,beta_mf,beta_so,beta,ecution_time]
+NameError: name 'eval_cand' is not defined
+Traceback (most recent call last):
+  File "main_6b.py", line 497, in <module>
+    data = [eps,f,m_np,cand_mf.len(),alpha_mf,alpha_so,alpha,beta_mf,beta_so,beta,ecution_time]
+NameError: name 'eval_cand' is not defined
+simulation_6b_0075.sh: line 3:  7118 Terminated              python3 main_6b.py 0.0075 $eps
+simulation_6b_0075.sh: line 3:  7137 Terminated              python3 main_6b.py 0.0075 $eps
+simulation_6b_0075.sh: line 3:  7153 Terminated              python3 main_6b.py 0.0075 $eps
+simulation_6b_0075.sh: line 3:  7169 Terminated              python3 main_6b.py 0.0075 $eps
+simulation_6b_0075.sh: line 3:  7185 Terminated              python3 main_6b.py 0.0075 $eps
+simulation_6b_0075.sh: line 3:  7201 Terminated              python3 main_6b.py 0.0075 $eps
+simulation_6b_0075.sh: line 3:  7217 Terminated              python3 main_6b.py 0.0075 $eps
+simulation_6b_0075.sh: line 3:  7233 Terminated              python3 main_6b.py 0.0075 $eps
+simulation_6b_0075.sh: line 3:  7249 Terminated              python3 main_6b.py 0.0075 $eps
+simulation_6b_0075.sh: line 3:  7265 Terminated              python3 main_6b.py 0.0075 $eps
+simulation_6b_0075.sh: line 3:  7281 Terminated              python3 main_6b.py 0.0075 $eps
+0.2,0,1,1,0.1363636364,0.1363636364,0.0,0.1363636364,0.1363636364,0.0,19.050719374790788
+0.1,0,1,1,0.1363636364,0.1363636364,0.0,0.1363636364,0.1363636364,0.0,18.506323704496026
+0.09,0,1,1,0.1363636364,0.1363636364,0.0,0.1363636364,0.1363636364,0.0,18.74480832926929
+0.08,0,1,1,0.1363636364,0.1363636364,0.0,0.1363636364,0.1363636364,0.0,18.823726864531636
+0.07,1,2,3,0.1623662816,0.1806364859,0.10114348831007683,0.1623662816,0.1363636364,0.19068606474915045,40.22855918481946
+0.06,1,3,4,0.166194332,0.1806364859,0.07995147728900767,0.1575353017,0.1363636364,0.15525887882526435,51.86403009854257
+0.05,1,5,6,0.3169728784,0.3619422572,0.12424462163629346,0.3024475524,0.1363636364,1.217948717008547,81.47863566316664
+0.04,1,6,7,0.3169728784,0.3619422572,0.12424462163629346,0.3024475524,0.1363636364,1.217948717008547,107.87261363305151
+0.03,1,8,9,0.294488189,0.3619422572,0.1863669324544401,0.1806364859,0.1363636364,0.32466756291342214,138.48158355429769
+0.02,1,9,10,0.294488189,0.3619422572,0.1863669324544401,0.1806364859,0.1363636364,0.32466756291342214,156.62448157183826
+0.01,1,10,11,0.294488189,0.3619422572,0.1863669324544401,0.1806364859,0.1363636364,0.32466756291342214,170.05452550388873
+0.009,1,11,12,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,30.83975457958877
+0.008,1,11,12,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,31.51408360339701
+0.007,1,11,12,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,31.04124490171671
+0.006,1,11,12,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,31.700726132839918
+0.005,1,11,12,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,32.1271434314549
+0.004,1,11,12,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,31.791162187233567
+0.003,1,11,12,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,31.706450317054987
+0.002,2,20,32,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,72.78764095529914
+0.001,2,39,51,0.645979021,0.645979021,0.0,0.3425101215,0.1363636364,1.5117408903302025,111.11240791715682

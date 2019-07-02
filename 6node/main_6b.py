@@ -44,7 +44,7 @@ def setUniverse(input_graph):
                 universe.append((i,j))
     GraphSet.set_universe(universe)
 
-def calc_f(nk):
+def calc_f(nk,p,eps):
     right_sum = 0.0
     for k in range(0,E+1):
         right_sum += nk[k]*((p**k)*((1-p)**(E-k)))
@@ -64,7 +64,7 @@ def calc_f(nk):
 
     return y+1
 
-def calc_mnp(nk,f):
+def calc_mnp(nk,f,p,eps):
     sum1=0.0
     sum2=0.0
     for k in range(0,E):
@@ -228,8 +228,8 @@ for i in range(40):
 # print('\n')
 
 #---------Setting failure patterns---------------
-f = calc_f(nk)
-m_np = calc_mnp(nk,f)
+f = calc_f(nk,p,eps)
+m_np = calc_mnp(nk,f,p,eps)
 # print("f = ", f, " m = ", m_np)
 # file = open('output.txt','a')
 # file.write("p ={0}, eps = {1}, f = {2}, m = {3}　\n".format(p, eps, f, m_np))
@@ -248,31 +248,34 @@ tl_so = []
 R_min_so = np.inf
 w_opt_so = copy.deepcopy(weights)
 
+
+#-----Set F_mf in PSO-M  and non-failure case in SO-----
+cand_mf = GraphSet()
+cand_so = GraphSet()
+
+
+#Setting for F_mf
+for i in range(0,f):
+    cand_mf.update(gc.len(E-i))
+cand_select = gc.len(E-f)
+for cnt in range(0,m_np):
+    rand_graph = next(cand_select.rand_iter())
+    cand_mf.add(rand_graph)
+    cand_select.remove(rand_graph)
+
+
+#Setting non-failure set
+cand_so = GraphSet()
+cand_so.update(gc.len(E))
+# for i in cand_so:
+#     print(i)
+
+# print("total {0} patterns to consider".format(cand_mf.len()))
+# print("total {0} patterns to consider".format(cand_so.len()))
+# for i in cand_mf:
+#       print(i)
+
 for loop in range(0,I_max):
-    #-----Set F_mf in PSO-M  and non-failure case in SO-----
-    cand_mf = GraphSet()
-    cand_so = GraphSet()
-
-    #Setting for F_mf
-    for i in range(0,f):
-        cand_mf.update(gc.len(E-i))
-    cand_select = gc.len(E-f)
-    for cnt in range(0,m_np):
-        rand_graph = next(cand_select.rand_iter())
-        cand_mf.add(rand_graph)
-        cand_select.remove(rand_graph)
-
-
-    #Setting non-failure set
-    cand_so = GraphSet()
-    cand_so.update(gc.len(E))
-    # for i in cand_so:
-    #     print(i)
-
-    # print("total {0} patterns to consider".format(cand_mf.len()))
-    # print("total {0} patterns to consider".format(cand_so.len()))
-    # for i in cand_mf:
-    #       print(i)
 
     #----------Step 1--------------
 
@@ -338,7 +341,7 @@ for loop in range(0,I_max):
                 R_min_mf = R_val_mf
                 # print('flag')
                 w_opt_mf = copy.deepcopy(w_tmp_mf)
-                eval_cand = cand_mf
+                # eval_cand = cand_mf
                 # cng_opt = copy.deepcopy(cng_list)
                 C_cnt = 0
             else:
@@ -436,8 +439,8 @@ for loop in range(0,I_max):
 # for i in eval_cand:
 #      print(i)
 
-r_mf = congestion_eval(G_cap,universe,eval_cand,tr,w_opt_mf)
-r_so = congestion_eval(G_cap,universe,eval_cand,tr,w_opt_so)
+r_mf = congestion_eval(G_cap,universe,cand_mf,tr,w_opt_mf)
+r_so = congestion_eval(G_cap,universe,cand_mf,tr,w_opt_so)
 
 alpha_mf = 0
 for s,d,r_val in r_mf:
@@ -491,11 +494,11 @@ ecution_time = time.perf_counter() - start_time
 
 
 #--------output--------------
-data = [eps,f,m_np,eval_cand.len(),alpha_mf,alpha_so,alpha,beta_mf,beta_so,beta,ecution_time]
+data = [eps,f,m_np,cand_mf.len(),alpha_mf,alpha_so,alpha,beta_mf,beta_so,beta,ecution_time]
 # print(data)
 data_str = ','.join(map(str,data))
 print(data_str)
-file_path = './result6b_{0}_i{1}_c{2}_tr{3}.txt'.format(str(p).split('.')[1],I_max,C_max,len(tr))
+file_path = './result6b_{0}_i{1}_c{2}_tr{3}_fix.txt'.format(str(p).split('.')[1],I_max,C_max,len(tr))
 with open(file_path,'a',encoding="utf-8") as f:
     # f.write('epsilon,Gamma,m_np,F_mf,alpha_PSO-M,alpha_SO,alpha,beta_PSO-M,beta_SO,beta,Time[s]')
     # f.write('\n')

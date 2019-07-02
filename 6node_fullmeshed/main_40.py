@@ -152,7 +152,7 @@ def congestion_eval(G_cap,universe,candidate,traffic,weights):
 
 #initialize parameters
 N = 6
-E = 8
+E = 15
 p = float(args[1])
 eps = float(args[2])
 U_c = 100
@@ -164,12 +164,12 @@ delta = 1e-10
 # --------------Setting candidates of failure pattern ---------------------------
 #input graph
 G_connect =[
-        [0,1,0,0,0,1],
-        [1,0,1,0,1,0],
-        [0,1,0,1,0,1],
-        [0,0,1,0,1,0],
-        [0,1,0,1,0,1],
-        [1,0,1,0,1,0]]
+        [0,1,1,1,1,1],
+        [1,0,1,1,1,1],
+        [1,1,0,1,1,1],
+        [1,1,1,0,1,1],
+        [1,1,1,1,0,1],
+        [1,1,1,1,1,0]]
 G_cap = np.zeros((N,N))
 for i in range(0,N):
     for j in range(0,N):
@@ -273,6 +273,7 @@ cand_so.update(gc.len(E))
 #       print(i)
 
 for loop in range(0,I_max):
+
 
     #----------Step 1--------------
 
@@ -494,9 +495,8 @@ ecution_time = time.perf_counter() - start_time
 data = [eps,f,m_np,cand_mf.len(),alpha_mf,alpha_so,alpha,beta_mf,beta_so,beta,ecution_time]
 # print(data)
 data_str = ','.join(map(str,data))
-file_path = './result6a_{0}_i{1}_c{2}_tr{3}_fix.txt'.format(str(p).split('.')[1],I_max,C_max,len(tr))
-# print(file)
 # print(data_str)
+file_path = './result6_{0}_i{1}_c{2}_tr{3}_fix.txt'.format(str(p).split('.')[1],I_max,C_max,len(tr))
 with open(file_path,'a',encoding="utf-8") as f:
     # f.write('epsilon,Gamma,m_np,F_mf,alpha_PSO-M,alpha_SO,alpha,beta_PSO-M,beta_SO,beta,Time[s]')
     # f.write('\n')
