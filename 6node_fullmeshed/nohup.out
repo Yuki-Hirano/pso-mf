@@ -63,3 +63,51 @@ simulation_01.sh: line 3:  4251 Terminated              python3 main.py 0.01 $ep
 simulation_01.sh: line 3:  4267 Terminated              python3 main.py 0.01 $eps
 simulation_01.sh: line 3:  4283 Terminated              python3 main.py 0.01 $eps
 simulation_01.sh: line 3:  4299 Terminated              python3 main.py 0.01 $eps
+simulation_0075.sh: line 3:  3475 Terminated              python3 main.py 0.0075 $eps
+simulation_0075.sh: line 3:  3492 Terminated              python3 main.py 0.0075 $eps
+simulation_0075.sh: line 3:  3508 Terminated              python3 main.py 0.0075 $eps
+simulation_0075.sh: line 3:  3524 Terminated              python3 main.py 0.0075 $eps
+simulation_0075.sh: line 3:  3540 Terminated              python3 main.py 0.0075 $eps
+simulation_0075.sh: line 3:  3556 Terminated              python3 main.py 0.0075 $eps
+simulation_0075.sh: line 3:  3572 Terminated              python3 main.py 0.0075 $eps
+simulation_0075.sh: line 3:  3588 Terminated              python3 main.py 0.0075 $eps
+simulation_0075.sh: line 3:  3604 Terminated              python3 main.py 0.0075 $eps
+simulation_0075.sh: line 3:  3620 Terminated              python3 main.py 0.0075 $eps
+simulation_0075.sh: line 3:  3636 Terminated              python3 main.py 0.0075 $eps
+simulation_0075.sh: line 3:  3652 Terminated              python3 main.py 0.0075 $eps
+simulation_0075.sh: line 3:  3668 Terminated              python3 main.py 0.0075 $eps
+simulation_0075.sh: line 3:  3684 Terminated              python3 main.py 0.0075 $eps
+simulation_0075.sh: line 3:  3700 Terminated              python3 main.py 0.0075 $eps
+simulation_0075.sh: line 3:  3716 Terminated              python3 main.py 0.0075 $eps
+simulation_0075.sh: line 3:  3732 Terminated              python3 main.py 0.0075 $eps
+simulation_0075.sh: line 3:  3748 Terminated              python3 main.py 0.0075 $eps
+Traceback (most recent call last):
+  File "main.py", line 157, in <module>
+    eps = float(args[2])
+ValueError: could not convert string to float: '0.3,0.2'
+Traceback (most recent call last):
+  File "main.py", line 157, in <module>
+    eps = float(args[2])
+ValueError: could not convert string to float: '0.3,0.2'
+simulation_015.sh: line 3:  8719 Killed                  python3 main.py 0.015 $eps
+simulation_005.sh: line 3:  9298 Terminated              python3 main.py 0.005 $eps
+simulation_005.sh: line 3:  9676 Terminated              python3 main.py 0.005 $eps
+simulation_005.sh: line 3:  9692 Terminated              python3 main.py 0.005 $eps
+simulation_005.sh: line 3:  9708 Terminated              python3 main.py 0.005 $eps
+simulation_005.sh: line 3:  9724 Terminated              python3 main.py 0.005 $eps
+simulation_005.sh: line 3:  9740 Terminated              python3 main.py 0.005 $eps
+simulation_005.sh: line 3:  9756 Terminated              python3 main.py 0.005 $eps
+simulation_005.sh: line 3:  9772 Terminated              python3 main.py 0.005 $eps
+simulation_005.sh: line 3:  9788 Terminated              python3 main.py 0.005 $eps
+simulation_005.sh: line 3:  9804 Terminated              python3 main.py 0.005 $eps
+simulation_005.sh: line 3:  9820 Terminated              python3 main.py 0.005 $eps
+simulation_005.sh: line 3:  9836 Terminated              python3 main.py 0.005 $eps
+simulation_005.sh: line 3:  9852 Terminated              python3 main.py 0.005 $eps
+simulation_005.sh: line 3:  9868 Terminated              python3 main.py 0.005 $eps
+simulation_005.sh: line 3:  9884 Terminated              python3 main.py 0.005 $eps
+simulation_005.sh: line 3:  9900 Terminated              python3 main.py 0.005 $eps
+simulation_005.sh: line 3:  9909 Terminated              python3 main.py 0.005 $eps
+simulation_005.sh: line 3:  9925 Terminated              python3 main.py 0.005 $eps
+simulation_005.sh: line 3:  9941 Terminated              python3 main.py 0.005 $eps
+simulation_005.sh: line 3:  9957 Terminated              python3 main.py 0.005 $eps
+simulation_005.sh: line 3:  9973 Terminated              python3 main.py 0.005 $eps

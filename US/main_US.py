@@ -7,9 +7,7 @@ import sys
 import copy
 import time
 
-
 start_time = time.perf_counter()
-
 
 np.random.seed(1)
 args = sys.argv
@@ -150,8 +148,8 @@ def congestion_eval(G_cap,universe,candidate,traffic,weights):
     return r
 
 #initialize parameters
-N = 6
-E = 11
+N = 24
+E = 43
 p = float(args[1])
 eps = float(args[2])
 U_c = 100
@@ -163,12 +161,32 @@ delta = 1e-10
 # --------------Setting candidates of failure pattern ---------------------------
 #input graph
 G_connect =[
-        [0,1,0,1,0,1],
-        [1,0,1,1,1,1],
-        [0,1,0,1,0,1],
-        [1,1,1,0,1,1],
-        [0,1,0,1,0,0],
-        [1,1,1,1,0,0]]
+[0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+[1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+[0,1,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+[0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+[0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+[1,1,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0],
+[0,0,1,1,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+[0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+[0,0,0,0,0,1,1,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,1,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0],
+[0,0,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0],
+[0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,1,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,1,0,0],
+[0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,0,1,0,0],
+[0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,1,1,0],
+[0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1],
+[0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0],
+[0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0],
+[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0],
+[0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,1,0,1,0],
+[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,1],
+[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0]
+        ]
+
 G_cap = np.zeros((N,N))
 for i in range(0,N):
     for j in range(0,N):
@@ -194,7 +212,7 @@ gc = GraphSet.connected_components(range(N)) #Graphset with connectivity
 #print(gc.len())
 nk = Count_nk(gc) #the number of non-connected failure pattern
 # print('The number of non-connected failure pattern')
-# print(nk)
+print(nk)
 # print('\n')
 
 num_fp = []
@@ -215,7 +233,7 @@ for i in target_graph: #initialize all link weight as 1
 
 #------------Setting traffic demand------------------
 tr=[]
-for i in range(40):
+for i in range(50):
     s = np.random.randint(0,N-1)
     d = np.random.randint(0,N-1)
     while (s == d):
@@ -247,10 +265,10 @@ tl_so = []
 R_min_so = np.inf
 w_opt_so = copy.deepcopy(weights)
 
-
 #-----Set F_mf in PSO-M  and non-failure case in SO-----
 cand_mf = GraphSet()
 cand_so = GraphSet()
+
 
 
 #Setting for F_mf
@@ -496,10 +514,11 @@ ecution_time = time.perf_counter() - start_time
 data = [eps,f,m_np,cand_mf.len(),alpha_mf,alpha_so,alpha,beta_mf,beta_so,beta,ecution_time]
 # print(data)
 data_str = ','.join(map(str,data))
-print(data_str)
-file_path = './result6b_{0}_i{1}_c{2}_tr{3}_fix_2.txt'.format(str(p).split('.')[1],I_max,C_max,len(tr))
+file_path = './result14_{0}_i{1}_c{2}_tr{3}_fix_2.txt'.format(str(p).split('.')[1],I_max,C_max,len(tr))
 with open(file_path,'a',encoding="utf-8") as f:
-    # f.write('epsilon,Gamma,m_np,F_mf,alpha_PSO-M,alpha_SO,alpha,beta_PSO-M,beta_SO,beta,Time[s]')
-    # f.write('\n')
     f.write(data_str)
+    f.write('\n')
+    f.write(str(w_opt_mf))
+    f.write('\n')
+    f.write(str(w_opt_so))
     f.write('\n')

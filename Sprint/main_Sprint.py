@@ -7,9 +7,7 @@ import sys
 import copy
 import time
 
-
 start_time = time.perf_counter()
-
 
 np.random.seed(1)
 args = sys.argv
@@ -29,8 +27,8 @@ def comb(n,k):
 
 def Count_nk(graph_list):
     nk=np.zeros(E+1)
-    for i in graph_list:
-        nk[E-len(i)] += 1
+    for i in range(0,E+1):
+        nk[i] = graph_list.len(i).len()
 
     for j in range(0,E+1):
         nk[j] = comb(E,j) - nk[j]
@@ -122,7 +120,7 @@ def calc_r(universe, graph, traffic_matrix, weight_list, cap_matrix):
     # print(flow)
     congestion = flow/G_cap
     #print('------------')
-    # print(congestion)
+    #print(congestion)
     cgn_s = int(np.argmax(congestion) / N)
     cgn_d = int(np.argmax(congestion) % N)
     r = np.amax(congestion)
@@ -150,8 +148,8 @@ def congestion_eval(G_cap,universe,candidate,traffic,weights):
     return r
 
 #initialize parameters
-N = 6
-E = 11
+N = 36
+E = 53
 p = float(args[1])
 eps = float(args[2])
 U_c = 100
@@ -163,12 +161,44 @@ delta = 1e-10
 # --------------Setting candidates of failure pattern ---------------------------
 #input graph
 G_connect =[
-        [0,1,0,1,0,1],
-        [1,0,1,1,1,1],
-        [0,1,0,1,0,1],
-        [1,1,1,0,1,1],
-        [0,1,0,1,0,0],
-        [1,1,1,1,0,0]]
+[0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+[1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+[1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+[0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+[0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+[0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+[0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+[0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+[0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+[0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+[0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0],
+[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0],
+[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0],
+[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0],
+[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0],
+[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1],
+[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,1,0],
+[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1],
+[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0],
+        ]
+
 G_cap = np.zeros((N,N))
 for i in range(0,N):
     for j in range(0,N):
@@ -177,9 +207,9 @@ for i in range(0,N):
         else:
             G_cap[i][j] = delta
 
-# print('Network capacity')
-# print(G_cap)
-# print('\n')
+print('Network capacity')
+print(G_cap)
+print('\n')
 
 
 # Set setUniverse
@@ -191,19 +221,20 @@ for i in range(0,N):
 GraphSet.set_universe(universe)
 
 gc = GraphSet.connected_components(range(N)) #Graphset with connectivity
-#print(gc.len())
+print(gc.len())
+print(gc.len(E).len())
 nk = Count_nk(gc) #the number of non-connected failure pattern
-# print('The number of non-connected failure pattern')
-# print(nk)
-# print('\n')
+print('The number of non-connected failure pattern')
+print(nk)
+print('\n')
 
 num_fp = []
 for i in range(0,E+1):
-    num_fp.append(int(comb(E,i)-nk[i])) #the number of connected failure pattern
+    num_fp.append(gc.len(i).len()) #the number of connected failure pattern
 
-# print('The number of connected failure pattern')
-# print(num_fp)
-# print('\n')
+print('The number of connected failure pattern')
+print(num_fp)
+print('\n')
 
 
 # --------------Setting link metrics ---------------------------
@@ -215,7 +246,7 @@ for i in target_graph: #initialize all link weight as 1
 
 #------------Setting traffic demand------------------
 tr=[]
-for i in range(40):
+for i in range(50):
     s = np.random.randint(0,N-1)
     d = np.random.randint(0,N-1)
     while (s == d):
@@ -229,7 +260,7 @@ for i in range(40):
 #---------Setting failure patterns---------------
 f = calc_f(nk,p,eps)
 m_np = calc_mnp(nk,f,p,eps)
-# print("f = ", f, " m = ", m_np)
+print("f = ", f, " m = ", m_np)
 # file = open('output.txt','a')
 # file.write("p ={0}, eps = {1}, f = {2}, m = {3}　\n".format(p, eps, f, m_np))
 # file.close()
@@ -247,10 +278,10 @@ tl_so = []
 R_min_so = np.inf
 w_opt_so = copy.deepcopy(weights)
 
-
 #-----Set F_mf in PSO-M  and non-failure case in SO-----
 cand_mf = GraphSet()
 cand_so = GraphSet()
+
 
 
 #Setting for F_mf
@@ -496,10 +527,11 @@ ecution_time = time.perf_counter() - start_time
 data = [eps,f,m_np,cand_mf.len(),alpha_mf,alpha_so,alpha,beta_mf,beta_so,beta,ecution_time]
 # print(data)
 data_str = ','.join(map(str,data))
-print(data_str)
-file_path = './result6b_{0}_i{1}_c{2}_tr{3}_fix_2.txt'.format(str(p).split('.')[1],I_max,C_max,len(tr))
+file_path = './result14_{0}_i{1}_c{2}_tr{3}_fix_2.txt'.format(str(p).split('.')[1],I_max,C_max,len(tr))
 with open(file_path,'a',encoding="utf-8") as f:
-    # f.write('epsilon,Gamma,m_np,F_mf,alpha_PSO-M,alpha_SO,alpha,beta_PSO-M,beta_SO,beta,Time[s]')
-    # f.write('\n')
     f.write(data_str)
+    f.write('\n')
+    f.write(str(w_opt_mf))
+    f.write('\n')
+    f.write(str(w_opt_so))
     f.write('\n')
