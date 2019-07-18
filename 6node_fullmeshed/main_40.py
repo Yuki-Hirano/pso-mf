@@ -71,10 +71,9 @@ def calc_mnp(nk,f,p,eps):
         sum1 += nk[k]*((p**k)*((1-p)**(E-k)))
     for k in range(f+1,E):
         sum2 += (comb(E,k)-nk[k])*((p**k)*((1-p)**(E-k)))
-    m_np = comb(E,f)-int((eps - sum1 - sum2)/((p**f)*((1-p)**(E-f))))
-
+    m_np = comb(E,f)-nk[f]-int((eps - sum1 - sum2)/((p**f)*((1-p)**(E-f))))
     if m_np > 0:
-        return m_np
+        return int(m_np)
     else:
         print("All failure patterns are ignored.")
         sys.exit()
@@ -496,7 +495,7 @@ data = [eps,f,m_np,cand_mf.len(),alpha_mf,alpha_so,alpha,beta_mf,beta_so,beta,ec
 # print(data)
 data_str = ','.join(map(str,data))
 # print(data_str)
-file_path = './result6_{0}_i{1}_c{2}_tr{3}_fix.txt'.format(str(p).split('.')[1],I_max,C_max,len(tr))
+file_path = './result6_{0}_i{1}_c{2}_tr{3}_fix_2.txt'.format(str(p).split('.')[1],I_max,C_max,len(tr))
 with open(file_path,'a',encoding="utf-8") as f:
     # f.write('epsilon,Gamma,m_np,F_mf,alpha_PSO-M,alpha_SO,alpha,beta_PSO-M,beta_SO,beta,Time[s]')
     # f.write('\n')

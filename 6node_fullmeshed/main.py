@@ -6,6 +6,7 @@ import numpy as np
 import sys
 import copy
 import time
+import gc
 
 
 start_time = time.perf_counter()
@@ -71,10 +72,9 @@ def calc_mnp(nk,f,p,eps):
         sum1 += nk[k]*((p**k)*((1-p)**(E-k)))
     for k in range(f+1,E):
         sum2 += (comb(E,k)-nk[k])*((p**k)*((1-p)**(E-k)))
-    m_np = comb(E,f)-int((eps - sum1 - sum2)/((p**f)*((1-p)**(E-f))))
-
+    m_np = comb(E,f)-nk[f]-int((eps - sum1 - sum2)/((p**f)*((1-p)**(E-f))))
     if m_np > 0:
-        return m_np
+        return int(m_np)
     else:
         print("All failure patterns are ignored.")
         sys.exit()
@@ -120,7 +120,10 @@ def calc_r(universe, graph, traffic_matrix, weight_list, cap_matrix):
                 flow[hop[0]][hop[1]] += traffic/ecmp_div
                 # print('{0},{1},{2}'.format(hop[0],hop[1],traffic/ecmp_div))
 
+    # print('flow')
     # print(flow)
+    # print('Gcap')
+    # print(G_cap)
     congestion = flow/G_cap
     #print('------------')
     # print(congestion)
@@ -191,9 +194,9 @@ for i in range(0,N):
             universe.append((i,j))
 GraphSet.set_universe(universe)
 
-gc = GraphSet.connected_components(range(N)) #Graphset with connectivity
+Gc = GraphSet.connected_components(range(N)) #Graphset with connectivity
 #print(gc.len())
-nk = Count_nk(gc) #the number of non-connected failure pattern
+nk = Count_nk(Gc) #the number of non-connected failure pattern
 # print('The number of non-connected failure pattern')
 # print(nk)
 # print('\n')
@@ -208,7 +211,7 @@ for i in range(0,E+1):
 
 
 # --------------Setting link metrics ---------------------------
-target_graph = gc.larger(E-1).choice()
+target_graph = Gc.larger(E-1).choice()
 weights={}
 for i in target_graph: #initialize all link weight as 1
     weights[i] = np.random.randint(1,5)
@@ -254,8 +257,8 @@ cand_so = GraphSet()
 
 #Setting for F_mf
 for i in range(0,f):
-    cand_mf.update(gc.len(E-i))
-cand_select = gc.len(E-f)
+    cand_mf.update(Gc.len(E-i))
+cand_select = Gc.len(E-f)
 for cnt in range(0,m_np):
     rand_graph = next(cand_select.rand_iter())
     cand_mf.add(rand_graph)
@@ -264,7 +267,7 @@ for cnt in range(0,m_np):
 
 #Setting non-failure set
 cand_so = GraphSet()
-cand_so.update(gc.len(E))
+cand_so.update(Gc.len(E))
 # for i in cand_so:
 #     print(i)
 
@@ -272,14 +275,16 @@ cand_so.update(gc.len(E))
 # print("total {0} patterns to consider".format(cand_so.len()))
 # for i in cand_mf:
 #       print(i)
-
+# print('start')
 for loop in range(0,I_max):
 
-
     #----------Step 1--------------
+    ite = 'iteration No.{0}'.format(loop)
+    with open('log.txt','a',encoding="utf-8") as f1:
+        f1.write(ite)
+        f1.write('\n')
 
-
-    target_graph = gc.larger(E-1).choice()
+    target_graph = Gc.larger(E-1).choice()
     weights={}
     for i in target_graph: #initialize all link weight
         weights[i] = np.random.randint(1,5)
@@ -356,7 +361,15 @@ for loop in range(0,I_max):
         r_pre_mf = copy.deepcopy(r_mf)
 
         w_tmp_mf[R_link_mf] += 1 #最大輻輳リンクの重みをインクリメント
-
+        gc.collect()
+    # print('finish PSO-M')
+    # del tl_mf
+    # gc.collect()
+    with open('log.txt','a',encoding="utf-8") as f1:
+        f1.write(str(R_min_mf))
+        f1.write('\n')
+        f1.write(str(w_opt_mf))
+        f1.write('\n')
 
 #-------------Optimization-so------------------
     # print('----------so-----------')
@@ -421,10 +434,18 @@ for loop in range(0,I_max):
         r_pre_so = copy.deepcopy(r_so)
 
         w_tmp_so[R_link_so] += 1 #最大輻輳リンクの重みをインクリメント
+        gc.collect()
+    with open('log.txt','a',encoding="utf-8") as f1:
+        f1.write(str(R_min_so))
+        f1.write('\n')
+        f1.write(str(w_opt_so))
+        f1.write('\n')
+    # print('finish SO')
+    # del tl_so
+    # gc.collect()
 
 
-
-print('-----optimized------')
+# print('-----optimized------')
 # print(tr)
 #
 # print(R_min_mf)
@@ -499,9 +520,13 @@ data = [eps,f,m_np,cand_mf.len(),alpha_mf,alpha_so,alpha,beta_mf,beta_so,beta,ec
 # print(data)
 data_str = ','.join(map(str,data))
 # print(data_str)
-file_path = './result6_{0}_i{1}_c{2}_tr{3}_fix.txt'.format(str(p).split('.')[1],I_max,C_max,len(tr))
+file_path = './result6_{0}_i{1}_c{2}_tr{3}_fix_2.txt'.format(str(p).split('.')[1],I_max,C_max,len(tr))
 with open(file_path,'a',encoding="utf-8") as f:
     # f.write('epsilon,Gamma,m_np,F_mf,alpha_PSO-M,alpha_SO,alpha,beta_PSO-M,beta_SO,beta,Time[s]')
     # f.write('\n')
     f.write(data_str)
+    f.write('\n')
+    f.write(str(w_opt_mf))
+    f.write('\n')
+    f.write(str(w_opt_so))
     f.write('\n')

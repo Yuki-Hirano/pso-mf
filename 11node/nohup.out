@@ -1,0 +1,382 @@
+[0.000e+00 0.000e+00 1.100e+01 1.420e+02 7.500e+02 2.002e+03 3.003e+03
+ 3.432e+03 3.003e+03 2.002e+03 1.001e+03 3.640e+02 9.100e+01 1.400e+01
+ 1.000e+00]
+simulation11.sh: line 3: 15716 Terminated              python3 main_11.py 0.03 $eps
+[0.000e+00 0.000e+00 1.100e+01 1.420e+02 7.500e+02 2.002e+03 3.003e+03
+ 3.432e+03 3.003e+03 2.002e+03 1.001e+03 3.640e+02 9.100e+01 1.400e+01
+ 1.000e+00]
+Traceback (most recent call last):
+  File "main_11.py", line 268, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+[0.000e+00 0.000e+00 1.100e+01 1.420e+02 7.500e+02 2.002e+03 3.003e+03
+ 3.432e+03 3.003e+03 2.002e+03 1.001e+03 3.640e+02 9.100e+01 1.400e+01
+ 1.000e+00]
+[0.000e+00 0.000e+00 1.100e+01 1.420e+02 7.500e+02 2.002e+03 3.003e+03
+ 3.432e+03 3.003e+03 2.002e+03 1.001e+03 3.640e+02 9.100e+01 1.400e+01
+ 1.000e+00]
+[0.000e+00 0.000e+00 1.100e+01 1.420e+02 7.500e+02 2.002e+03 3.003e+03
+ 3.432e+03 3.003e+03 2.002e+03 1.001e+03 3.640e+02 9.100e+01 1.400e+01
+ 1.000e+00]
+[0.000e+00 0.000e+00 1.100e+01 1.420e+02 7.500e+02 2.002e+03 3.003e+03
+ 3.432e+03 3.003e+03 2.002e+03 1.001e+03 3.640e+02 9.100e+01 1.400e+01
+ 1.000e+00]
+[0.000e+00 0.000e+00 1.100e+01 1.420e+02 7.500e+02 2.002e+03 3.003e+03
+ 3.432e+03 3.003e+03 2.002e+03 1.001e+03 3.640e+02 9.100e+01 1.400e+01
+ 1.000e+00]
+[0.000e+00 0.000e+00 1.100e+01 1.420e+02 7.500e+02 2.002e+03 3.003e+03
+ 3.432e+03 3.003e+03 2.002e+03 1.001e+03 3.640e+02 9.100e+01 1.400e+01
+ 1.000e+00]
+[0.000e+00 0.000e+00 1.100e+01 1.420e+02 7.500e+02 2.002e+03 3.003e+03
+ 3.432e+03 3.003e+03 2.002e+03 1.001e+03 3.640e+02 9.100e+01 1.400e+01
+ 1.000e+00]
+[0.000e+00 0.000e+00 1.100e+01 1.420e+02 7.500e+02 2.002e+03 3.003e+03
+ 3.432e+03 3.003e+03 2.002e+03 1.001e+03 3.640e+02 9.100e+01 1.400e+01
+ 1.000e+00]
+[0.000e+00 0.000e+00 1.100e+01 1.420e+02 7.500e+02 2.002e+03 3.003e+03
+ 3.432e+03 3.003e+03 2.002e+03 1.001e+03 3.640e+02 9.100e+01 1.400e+01
+ 1.000e+00]
+[0.000e+00 0.000e+00 1.100e+01 1.420e+02 7.500e+02 2.002e+03 3.003e+03
+ 3.432e+03 3.003e+03 2.002e+03 1.001e+03 3.640e+02 9.100e+01 1.400e+01
+ 1.000e+00]
+[0.000e+00 0.000e+00 1.100e+01 1.420e+02 7.500e+02 2.002e+03 3.003e+03
+ 3.432e+03 3.003e+03 2.002e+03 1.001e+03 3.640e+02 9.100e+01 1.400e+01
+ 1.000e+00]
+[0.000e+00 0.000e+00 1.100e+01 1.420e+02 7.500e+02 2.002e+03 3.003e+03
+ 3.432e+03 3.003e+03 2.002e+03 1.001e+03 3.640e+02 9.100e+01 1.400e+01
+ 1.000e+00]
+[0.000e+00 0.000e+00 1.100e+01 1.420e+02 7.500e+02 2.002e+03 3.003e+03
+ 3.432e+03 3.003e+03 2.002e+03 1.001e+03 3.640e+02 9.100e+01 1.400e+01
+ 1.000e+00]
+Traceback (most recent call last):
+  File "main_11.py", line 268, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+[0.000e+00 0.000e+00 1.100e+01 1.420e+02 7.500e+02 2.002e+03 3.003e+03
+ 3.432e+03 3.003e+03 2.002e+03 1.001e+03 3.640e+02 9.100e+01 1.400e+01
+ 1.000e+00]
+Traceback (most recent call last):
+  File "main_11.py", line 268, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+[0.000e+00 0.000e+00 1.100e+01 1.420e+02 7.500e+02 2.002e+03 3.003e+03
+ 3.432e+03 3.003e+03 2.002e+03 1.001e+03 3.640e+02 9.100e+01 1.400e+01
+ 1.000e+00]
+Traceback (most recent call last):
+  File "main_11.py", line 268, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+[0.000e+00 0.000e+00 1.100e+01 1.420e+02 7.500e+02 2.002e+03 3.003e+03
+ 3.432e+03 3.003e+03 2.002e+03 1.001e+03 3.640e+02 9.100e+01 1.400e+01
+ 1.000e+00]
+Traceback (most recent call last):
+  File "main_11.py", line 268, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+[0.000e+00 0.000e+00 1.100e+01 1.420e+02 7.500e+02 2.002e+03 3.003e+03
+ 3.432e+03 3.003e+03 2.002e+03 1.001e+03 3.640e+02 9.100e+01 1.400e+01
+ 1.000e+00]
+Traceback (most recent call last):
+  File "main_11.py", line 268, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+[0.000e+00 0.000e+00 1.100e+01 1.420e+02 7.500e+02 2.002e+03 3.003e+03
+ 3.432e+03 3.003e+03 2.002e+03 1.001e+03 3.640e+02 9.100e+01 1.400e+01
+ 1.000e+00]
+Traceback (most recent call last):
+  File "main_11.py", line 268, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+[0.000e+00 0.000e+00 1.100e+01 1.420e+02 7.500e+02 2.002e+03 3.003e+03
+ 3.432e+03 3.003e+03 2.002e+03 1.001e+03 3.640e+02 9.100e+01 1.400e+01
+ 1.000e+00]
+Traceback (most recent call last):
+  File "main_11.py", line 268, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+[0.000e+00 0.000e+00 1.100e+01 1.420e+02 7.500e+02 2.002e+03 3.003e+03
+ 3.432e+03 3.003e+03 2.002e+03 1.001e+03 3.640e+02 9.100e+01 1.400e+01
+ 1.000e+00]
+Traceback (most recent call last):
+  File "main_11.py", line 268, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+[0.000e+00 0.000e+00 1.100e+01 1.420e+02 7.500e+02 2.002e+03 3.003e+03
+ 3.432e+03 3.003e+03 2.002e+03 1.001e+03 3.640e+02 9.100e+01 1.400e+01
+ 1.000e+00]
+Traceback (most recent call last):
+  File "main_11.py", line 268, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+[0.000e+00 0.000e+00 1.100e+01 1.420e+02 7.500e+02 2.002e+03 3.003e+03
+ 3.432e+03 3.003e+03 2.002e+03 1.001e+03 3.640e+02 9.100e+01 1.400e+01
+ 1.000e+00]
+Traceback (most recent call last):
+  File "main_11.py", line 268, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+[0.000e+00 0.000e+00 1.100e+01 1.420e+02 7.500e+02 2.002e+03 3.003e+03
+ 3.432e+03 3.003e+03 2.002e+03 1.001e+03 3.640e+02 9.100e+01 1.400e+01
+ 1.000e+00]
+Traceback (most recent call last):
+  File "main_11.py", line 268, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_11.py", line 5, in <module>
+    import numpy as np
+ImportError: No module named 'numpy'
+Traceback (most recent call last):
+  File "main_11.py", line 5, in <module>
+    import numpy as np
+ImportError: No module named 'numpy'
+Traceback (most recent call last):
+  File "main_11.py", line 5, in <module>
+    import numpy as np
+ImportError: No module named 'numpy'
+Traceback (most recent call last):
+  File "main_11.py", line 5, in <module>
+    import numpy as np
+ImportError: No module named 'numpy'
+Traceback (most recent call last):
+  File "main_11.py", line 5, in <module>
+    import numpy as np
+ImportError: No module named 'numpy'
+Traceback (most recent call last):
+  File "main_11.py", line 5, in <module>
+    import numpy as np
+ImportError: No module named 'numpy'
+Traceback (most recent call last):
+  File "main_11.py", line 5, in <module>
+    import numpy as np
+ImportError: No module named 'numpy'
+Traceback (most recent call last):
+  File "main_11.py", line 5, in <module>
+    import numpy as np
+ImportError: No module named 'numpy'
+Traceback (most recent call last):
+  File "main_11.py", line 5, in <module>
+    import numpy as np
+ImportError: No module named 'numpy'
+Traceback (most recent call last):
+  File "main_11.py", line 5, in <module>
+    import numpy as np
+ImportError: No module named 'numpy'
+Traceback (most recent call last):
+  File "main_11.py", line 5, in <module>
+    import numpy as np
+ImportError: No module named 'numpy'
+Traceback (most recent call last):
+  File "main_11.py", line 5, in <module>
+    import numpy as np
+ImportError: No module named 'numpy'
+Traceback (most recent call last):
+  File "main_11.py", line 5, in <module>
+    import numpy as np
+ImportError: No module named 'numpy'
+Traceback (most recent call last):
+  File "main_11.py", line 5, in <module>
+    import numpy as np
+ImportError: No module named 'numpy'
+Traceback (most recent call last):
+  File "main_11.py", line 5, in <module>
+    import numpy as np
+ImportError: No module named 'numpy'
+Traceback (most recent call last):
+  File "main_11.py", line 5, in <module>
+    import numpy as np
+ImportError: No module named 'numpy'
+Traceback (most recent call last):
+  File "main_11.py", line 5, in <module>
+    import numpy as np
+ImportError: No module named 'numpy'
+Traceback (most recent call last):
+  File "main_11.py", line 5, in <module>
+    import numpy as np
+ImportError: No module named 'numpy'
+Traceback (most recent call last):
+  File "main_11.py", line 5, in <module>
+    import numpy as np
+ImportError: No module named 'numpy'
+Traceback (most recent call last):
+  File "main_11.py", line 5, in <module>
+    import numpy as np
+ImportError: No module named 'numpy'
+Traceback (most recent call last):
+  File "main_11.py", line 5, in <module>
+    import numpy as np
+ImportError: No module named 'numpy'
+Traceback (most recent call last):
+  File "main_11.py", line 5, in <module>
+    import numpy as np
+ImportError: No module named 'numpy'
+Traceback (most recent call last):
+  File "main_11.py", line 5, in <module>
+    import numpy as np
+ImportError: No module named 'numpy'
+Traceback (most recent call last):
+  File "main_11.py", line 204, in <module>
+    print(nk)
+NameError: name 'nk' is not defined
+Traceback (most recent call last):
+  File "main_11.py", line 204, in <module>
+    print(nk)
+NameError: name 'nk' is not defined
+Traceback (most recent call last):
+  File "main_11.py", line 204, in <module>
+    print(nk)
+NameError: name 'nk' is not defined
+Traceback (most recent call last):
+  File "main_11.py", line 204, in <module>
+    print(nk)
+NameError: name 'nk' is not defined
+Traceback (most recent call last):
+  File "main_11.py", line 204, in <module>
+    print(nk)
+NameError: name 'nk' is not defined
+Traceback (most recent call last):
+  File "main_11.py", line 204, in <module>
+    print(nk)
+NameError: name 'nk' is not defined
+Traceback (most recent call last):
+  File "main_11.py", line 204, in <module>
+    print(nk)
+NameError: name 'nk' is not defined
+Traceback (most recent call last):
+  File "main_11.py", line 204, in <module>
+    print(nk)
+NameError: name 'nk' is not defined
+Traceback (most recent call last):
+  File "main_11.py", line 204, in <module>
+    print(nk)
+NameError: name 'nk' is not defined
+Traceback (most recent call last):
+  File "main_11.py", line 204, in <module>
+    print(nk)
+NameError: name 'nk' is not defined
+Traceback (most recent call last):
+  File "main_11.py", line 204, in <module>
+    print(nk)
+NameError: name 'nk' is not defined
+Traceback (most recent call last):
+  File "main_11.py", line 204, in <module>
+    print(nk)
+NameError: name 'nk' is not defined
+Traceback (most recent call last):
+  File "main_11.py", line 204, in <module>
+    print(nk)
+NameError: name 'nk' is not defined
+Traceback (most recent call last):
+  File "main_11.py", line 204, in <module>
+    print(nk)
+NameError: name 'nk' is not defined
+Traceback (most recent call last):
+  File "main_11.py", line 204, in <module>
+    print(nk)
+NameError: name 'nk' is not defined
+Traceback (most recent call last):
+  File "main_11.py", line 204, in <module>
+    print(nk)
+NameError: name 'nk' is not defined
+Traceback (most recent call last):
+  File "main_11.py", line 204, in <module>
+    print(nk)
+NameError: name 'nk' is not defined
+Traceback (most recent call last):
+  File "main_11.py", line 204, in <module>
+    print(nk)
+NameError: name 'nk' is not defined
+Traceback (most recent call last):
+  File "main_11.py", line 204, in <module>
+    print(nk)
+NameError: name 'nk' is not defined
+Traceback (most recent call last):
+  File "main_11.py", line 204, in <module>
+    print(nk)
+NameError: name 'nk' is not defined
+Traceback (most recent call last):
+  File "main_11.py", line 204, in <module>
+    print(nk)
+NameError: name 'nk' is not defined
+Traceback (most recent call last):
+  File "main_11.py", line 204, in <module>
+    print(nk)
+NameError: name 'nk' is not defined
+Traceback (most recent call last):
+  File "main_11.py", line 204, in <module>
+    print(nk)
+NameError: name 'nk' is not defined
+Traceback (most recent call last):
+  File "main_11.py", line 268, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_11.py", line 268, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_11.py", line 268, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_11.py", line 268, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_11.py", line 268, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_11.py", line 268, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_11.py", line 268, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_11.py", line 268, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_11.py", line 268, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_11.py", line 268, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+Traceback (most recent call last):
+  File "main_11.py", line 268, in <module>
+    rand_graph = next(cand_select.rand_iter())
+StopIteration
+The number of non-connected failure pattern
+[0.000e+00 0.000e+00 1.100e+01 1.420e+02 7.500e+02 2.002e+03 3.003e+03
+ 3.432e+03 3.003e+03 2.002e+03 1.001e+03 3.640e+02 9.100e+01 1.400e+01
+ 1.000e+00]
+The number of connected failure pattern
+[1, 14, 80, 222, 251, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Traceback (most recent call last):
+  File "main_11.py", line 235, in <module>
+    m_np = calc_mnp(nk,f)
+TypeError: calc_mnp() missing 2 required positional arguments: 'p' and 'eps'
+The number of non-connected failure pattern
+[0.000e+00 0.000e+00 1.100e+01 1.420e+02 7.500e+02 2.002e+03 3.003e+03
+ 3.432e+03 3.003e+03 2.002e+03 1.001e+03 3.640e+02 9.100e+01 1.400e+01
+ 1.000e+00]
+The number of connected failure pattern
+[1, 14, 80, 222, 251, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Traceback (most recent call last):
+  File "main_11.py", line 235, in <module>
+    m_np = calc_mnp(nk,f)
+TypeError: calc_mnp() missing 2 required positional arguments: 'p' and 'eps'
+The number of non-connected failure pattern
+[0.000e+00 0.000e+00 1.100e+01 1.420e+02 7.500e+02 2.002e+03 3.003e+03
+ 3.432e+03 3.003e+03 2.002e+03 1.001e+03 3.640e+02 9.100e+01 1.400e+01
+ 1.000e+00]
+The number of connected failure pattern
+[1, 14, 80, 222, 251, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Traceback (most recent call last):
+  File "main_11.py", line 235, in <module>
+    m_np = calc_mnp(nk,f)
+TypeError: calc_mnp() missing 2 required positional arguments: 'p' and 'eps'

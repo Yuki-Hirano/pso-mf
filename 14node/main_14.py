@@ -7,9 +7,7 @@ import sys
 import copy
 import time
 
-
 start_time = time.perf_counter()
-
 
 np.random.seed(1)
 args = sys.argv
@@ -44,7 +42,7 @@ def setUniverse(input_graph):
                 universe.append((i,j))
     GraphSet.set_universe(universe)
 
-def calc_f(nk):
+def calc_f(nk,p,eps):
     right_sum = 0.0
     for k in range(0,E+1):
         right_sum += nk[k]*((p**k)*((1-p)**(E-k)))
@@ -64,17 +62,16 @@ def calc_f(nk):
 
     return y+1
 
-def calc_mnp(nk,f):
+def calc_mnp(nk,f,p,eps):
     sum1=0.0
     sum2=0.0
     for k in range(0,E):
         sum1 += nk[k]*((p**k)*((1-p)**(E-k)))
     for k in range(f+1,E):
         sum2 += (comb(E,k)-nk[k])*((p**k)*((1-p)**(E-k)))
-    m_np = comb(E,f)-int((eps - sum1 - sum2)/((p**f)*((1-p)**(E-f))))
-
+    m_np = comb(E,f)-nk[f]-int((eps - sum1 - sum2)/((p**f)*((1-p)**(E-f))))
     if m_np > 0:
-        return m_np
+        return int(m_np)
     else:
         print("All failure patterns are ignored.")
         sys.exit()
@@ -225,7 +222,7 @@ for i in target_graph: #initialize all link weight as 1
 
 #------------Setting traffic demand------------------
 tr=[]
-for i in range(100):
+for i in range(50):
     s = np.random.randint(0,N-1)
     d = np.random.randint(0,N-1)
     while (s == d):
@@ -237,8 +234,8 @@ for i in range(100):
 # print('\n')
 
 #---------Setting failure patterns---------------
-f = calc_f(nk)
-m_np = calc_mnp(nk,f)
+f = calc_f(nk,p,eps)
+m_np = calc_mnp(nk,f,p,eps)
 # print("f = ", f, " m = ", m_np)
 # file = open('output.txt','a')
 # file.write("p ={0}, eps = {1}, f = {2}, m = {3}　\n".format(p, eps, f, m_np))
@@ -260,6 +257,8 @@ w_opt_so = copy.deepcopy(weights)
 #-----Set F_mf in PSO-M  and non-failure case in SO-----
 cand_mf = GraphSet()
 cand_so = GraphSet()
+
+
 
 #Setting for F_mf
 for i in range(0,f):
@@ -283,7 +282,6 @@ cand_so.update(gc.len(E))
 #       print(i)
 
 for loop in range(0,I_max):
-
 
     #----------Step 1--------------
 
@@ -505,7 +503,11 @@ ecution_time = time.perf_counter() - start_time
 data = [eps,f,m_np,cand_mf.len(),alpha_mf,alpha_so,alpha,beta_mf,beta_so,beta,ecution_time]
 # print(data)
 data_str = ','.join(map(str,data))
-file_path = './result14_{0}_i{1}_c{2}_tr{3}_fix.txt'.format(str(p).split('.')[1],I_max,C_max,len(tr))
+file_path = './result14_{0}_i{1}_c{2}_tr{3}_fix_2.txt'.format(str(p).split('.')[1],I_max,C_max,len(tr))
 with open(file_path,'a',encoding="utf-8") as f:
     f.write(data_str)
+    f.write('\n')
+    f.write(str(w_opt_mf))
+    f.write('\n')
+    f.write(str(w_opt_so))
     f.write('\n')
