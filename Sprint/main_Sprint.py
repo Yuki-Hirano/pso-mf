@@ -28,10 +28,15 @@ def comb(n,k):
 def Count_nk(graph_list):
     nk=np.zeros(E+1)
     for i in range(0,E+1):
+<<<<<<< HEAD
         nk[i] = graph_list.len(E-i).len()
     print(nk[0])
     print(nk[1])
     print(nk[2])
+=======
+        nk[i] = graph_list.len(i).len()
+
+>>>>>>> origin/master
     for j in range(0,E+1):
         nk[j] = comb(E,j) - nk[j]
     return nk
@@ -209,9 +214,15 @@ for i in range(0,N):
         else:
             G_cap[i][j] = delta
 
+<<<<<<< HEAD
 # print('Network capacity')
 # print(G_cap)
 # print('\n')
+=======
+print('Network capacity')
+print(G_cap)
+print('\n')
+>>>>>>> origin/master
 
 
 # Set setUniverse
