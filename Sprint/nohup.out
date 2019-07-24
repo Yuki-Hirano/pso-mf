@@ -1,0 +1,8 @@
+  File "main_Sprint.py", line 31
+    <<<<<<< HEAD
+    ^
+IndentationError: expected an indented block
+  File "main_Sprint.py", line 31
+    <<<<<<< HEAD
+    ^
+IndentationError: expected an indented block

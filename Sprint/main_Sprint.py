@@ -28,15 +28,11 @@ def comb(n,k):
 def Count_nk(graph_list):
     nk=np.zeros(E+1)
     for i in range(0,E+1):
-<<<<<<< HEAD
         nk[i] = graph_list.len(E-i).len()
-    print(nk[0])
-    print(nk[1])
-    print(nk[2])
-=======
-        nk[i] = graph_list.len(i).len()
+    # print(nk[0])
+    # print(nk[1])
+    # print(nk[2])
 
->>>>>>> origin/master
     for j in range(0,E+1):
         nk[j] = comb(E,j) - nk[j]
     return nk
@@ -85,22 +81,34 @@ def calc_mnp(nk,f,p,eps):
 
 
 def shortest_path(path_graphset, weight_dic):
-    metric_list = []
-    metric_tuple = []
-    for path in path_graphset:
-        sum=0
-        for hop in path:
-            sum += weight_dic[hop]
-        metric_list.append(sum)
-        metric_tuple.append((path,sum))
+    path_list=[]
+    # print('path number',path_graphset.len())
+    iter = path_graphset.min_iter(weight_dic)
+    # for i in iter:
+    #     print(i)
+    # print(iter.len())
+    # print('path number',path_graphset.len())
+    s1 = iter.__next__()
+    path_list.append(s1)
+    if path_graphset.len()>1:
+        min_weight = count_weight(s1,weight_dic)
+        # print(min_weight)
+        while(True):
+            s = iter.__next__()
+            total_weight = count_weight(s,weight_dic)
+            # print(total_weight)
+            if total_weight==min_weight:
+                path_list.append(s)
+            else:
+                 break
+    return path_list
 
-    # print(metric_tuple)
-    min_metric = min(metric_list)
-    ecmp_path = []
-    for i in metric_tuple:
-        if i[1] == min_metric:
-            ecmp_path.append(i[0])
-    return ecmp_path
+def count_weight(path, weight_dic):
+    sum=0
+    for i in path:
+        sum += weight_dic[i]
+    return sum
+
 
 def calc_r(universe, graph, traffic_matrix, weight_list, cap_matrix):
     flow = np.zeros((N,N))
@@ -214,16 +222,10 @@ for i in range(0,N):
         else:
             G_cap[i][j] = delta
 
-<<<<<<< HEAD
+
 # print('Network capacity')
 # print(G_cap)
 # print('\n')
-=======
-print('Network capacity')
-print(G_cap)
-print('\n')
->>>>>>> origin/master
-
 
 # Set setUniverse
 universe = []
@@ -237,8 +239,8 @@ gc = GraphSet.connected_components(range(N)) #Graphset with connectivity
 # print(gc.len())
 # print(gc.len(E).len())
 nk = Count_nk(gc) #the number of non-connected failure pattern
-for i in nk:
-    print(str(int(i))+',',end='')
+# for i in nk:
+#     print(str(int(i))+',',end='')
 # print('The number of non-connected failure pattern')
 # print(nk)
 # print('\n')
@@ -247,9 +249,9 @@ num_fp = []
 for i in range(0,E+1):
     num_fp.append(gc.len(E-i).len()) #the number of connected failure pattern
 
-print('The number of connected failure pattern')
-print(num_fp)
-print('\n')
+# print('The number of connected failure pattern')
+# print(num_fp)
+# print('\n')
 
 
 # --------------Setting link metrics ---------------------------
@@ -275,7 +277,7 @@ for i in range(50):
 #---------Setting failure patterns---------------
 f = calc_f(nk,p,eps)
 m_np = calc_mnp(nk,f,p,eps)
-print("f = ", f, " m = ", m_np)
+# print("f = ", f, " m = ", m_np)
 # file = open('output.txt','a')
 # file.write("p ={0}, eps = {1}, f = {2}, m = {3}　\n".format(p, eps, f, m_np))
 # file.close()

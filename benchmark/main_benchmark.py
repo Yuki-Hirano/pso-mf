@@ -76,8 +76,7 @@ def calc_mnp(nk,f,p,eps):
         print("All failure patterns are ignored.")
         sys.exit()
 
-
-ddef shortest_path(path_graphset, weight_dic):
+def shortest_path(path_graphset, weight_dic):
     path_list=[]
     # print('path number',path_graphset.len())
     iter = path_graphset.min_iter(weight_dic)
@@ -112,8 +111,16 @@ def calc_r(universe, graph, traffic_matrix, weight_list, cap_matrix):
     failed_link = list(set(universe) - set(graph))
     # print("failed_link", failed_link)
     for s,d,traffic in tr:
+        # print('s,d',s,d)
+        # if s==8 and d==9:
+        #     print(weight_list)
+        time_7 = time.perf_counter()
         # print('({0},{1})'.format(s,d))
         all_paths = GraphSet.paths(s,d)
+        # print(all_paths.len())
+        time_8 = time.perf_counter()
+        # print('all paths')
+        # print(time_8-time_7)
         if failed_link == []:
             paths = all_paths
         else:
@@ -121,8 +128,11 @@ def calc_r(universe, graph, traffic_matrix, weight_list, cap_matrix):
         # print("paths", len(paths))
         ospf_path_list = shortest_path(paths, weight_list)
         # print(ospf_path_list)
-
+        time_9 = time.perf_counter()
+        # print('OSPF')
+        # print(time_9-time_8)
         ecmp_div = len(ospf_path_list)
+        # print(ecmp_div)
         #print(ecmp_div)
         for ospf_path in ospf_path_list:
             for hop in ospf_path:
@@ -151,9 +161,17 @@ def congestion_eval(G_cap,universe,candidate,traffic,weights):
     r=[]
     for i in candidate:
         # print(i)
+        time_4 = time.perf_counter()
         G_fail = failed_G_cap(G_cap,i)
+        time_5 = time.perf_counter()
+        # print('G_fail')
+        # print(time_5-time_4)
         # print(G_fail)
+
         cng_s,cng_d,r_val,congestion = calc_r(universe, i, tr, weights,G_fail)
+        time_6 = time.perf_counter()
+        # print('calc_r')
+        # print(time_6-time_5)
         # print(congestion)
         r.append((cng_s,cng_d,round(r_val,10))) # tuple of the most congested link (s,d) and r
         # print(congestion)
@@ -198,7 +216,6 @@ for i in range(0,N):
 # print(G_cap)
 # print('\n')
 
-
 # Set setUniverse
 universe = []
 for i in range(0,N):
@@ -222,6 +239,10 @@ for i in range(0,E+1):
 print(num_fp)
 # print('\n')
 
+time_1 = time.perf_counter()
+print('configuration')
+print(time_1-start_time)
+
 
 # --------------Setting link metrics ---------------------------
 target_graph = gc.larger(E-1).choice()
@@ -243,10 +264,14 @@ for i in range(50):
 # print(tr)
 # print('\n')
 
+time_2 = time.perf_counter()
+print('Setting metrics and traffic demand')
+print(time_2-time_1)
+
 #---------Setting failure patterns---------------
 f = calc_f(nk,p,eps)
 m_np = calc_mnp(nk,f,p,eps)
-# print("f = ", f, " m = ", m_np)
+print("f = ", f, " m = ", m_np)
 # file = open('output.txt','a')
 # file.write("p ={0}, eps = {1}, f = {2}, m = {3}　\n".format(p, eps, f, m_np))
 # file.close()
@@ -291,6 +316,10 @@ cand_so.update(gc.len(E))
 # for i in cand_mf:
 #       print(i)
 
+time_3 = time.perf_counter()
+print('Setting failure patterns')
+print(time_3-time_2)
+
 for loop in range(0,I_max):
 
     #----------Step 1--------------
@@ -318,6 +347,7 @@ for loop in range(0,I_max):
         # print('{0} th iteration'.format(loop))
         # r = []
         # print(cand_mf.len())
+        time_5 = time.perf_counter()
         r_mf = congestion_eval(G_cap,universe,cand_mf,tr,w_tmp_mf)
         # r_so = congestion_eval(G_cap,universe,cand_so,tr,w_tmp_so)
         # print(r_mf)
@@ -329,6 +359,9 @@ for loop in range(0,I_max):
                 R_val_mf = r_val_mf
                 R_link_mf = (s,d) #最大輻輳値とそのリンクを保持
 
+        time_6 = time.perf_counter()
+        print('Compute R_mf for all failure patterns')
+        print(time_6-time_5)
         # for s,d,r_val_so in r_so:
         #     if r_val_so > R_val_so:
         #         R_val_so = r_val_so
@@ -513,7 +546,7 @@ ecution_time = time.perf_counter() - start_time
 data = [eps,f,m_np,cand_mf.len(),alpha_mf,alpha_so,alpha,beta_mf,beta_so,beta,ecution_time]
 # print(data)
 data_str = ','.join(map(str,data))
-file_path = './resultNJlata_{0}_i{1}_c{2}_tr{3}_fix_2.txt'.format(str(p).split('.')[1],I_max,C_max,len(tr))
+file_path = './result_{0}_i{1}_c{2}_tr{3}_fix_2.txt'.format(str(p).split('.')[1],I_max,C_max,len(tr))
 with open(file_path,'a',encoding="utf-8") as f:
     f.write(data_str)
     f.write('\n')
