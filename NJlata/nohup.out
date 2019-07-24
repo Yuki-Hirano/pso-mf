@@ -26,3 +26,379 @@ KeyboardInterrupt
  4.903140e+05 2.451570e+05 1.009470e+05 3.364900e+04 8.855000e+03
  1.771000e+03 2.530000e+02 2.300000e+01 1.000000e+00]
 [1, 23, 250, 1705, 8167, 29132, 80007, 172341, 293440, 394032, 411183, 321694, 173304, 50017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+simulation_NJlata.sh: line 1: 20762 Terminated              python3 main_NJlata.py 0.01 $eps
+simulation_NJlata.sh: line 1: 20783 Terminated              python3 main_NJlata.py 0.01 $eps
+simulation_NJlata.sh: line 1: 20802 Terminated              python3 main_NJlata.py 0.01 $eps
+simulation_NJlata.sh: line 1: 20819 Terminated              python3 main_NJlata.py 0.01 $eps
+simulation_NJlata.sh: line 1: 20835 Terminated              python3 main_NJlata.py 0.01 $eps
+simulation_NJlata.sh: line 1: 20851 Terminated              python3 main_NJlata.py 0.01 $eps
+simulation_NJlata.sh: line 1: 20867 Terminated              python3 main_NJlata.py 0.01 $eps
+simulation_NJlata.sh: line 1: 20883 Terminated              python3 main_NJlata.py 0.01 $eps
+simulation_NJlata.sh: line 1: 20899 Terminated              python3 main_NJlata.py 0.01 $eps
+simulation_NJlata.sh: line 1: 20915 Terminated              python3 main_NJlata.py 0.01 $eps
+simulation_NJlata.sh: line 1: 20931 Terminated              python3 main_NJlata.py 0.01 $eps
+simulation_NJlata.sh: line 1: 20947 Terminated              python3 main_NJlata.py 0.01 $eps
+simulation_NJlata.sh: line 1: 20963 Terminated              python3 main_NJlata.py 0.01 $eps
+simulation_NJlata.sh: line 1: 20979 Terminated              python3 main_NJlata.py 0.01 $eps
+simulation_NJlata.sh: line 1: 20995 Terminated              python3 main_NJlata.py 0.01 $eps
+simulation_NJlata.sh: line 1: 21011 Terminated              python3 main_NJlata.py 0.01 $eps
+simulation_NJlata.sh: line 1: 21027 Terminated              python3 main_NJlata.py 0.01 $eps
+simulation_NJlata.sh: line 1: 21043 Terminated              python3 main_NJlata.py 0.01 $eps
+simulation_NJlata.sh: line 1: 21059 Terminated              python3 main_NJlata.py 0.01 $eps
+simulation_NJlata.sh: line 1: 21075 Terminated              python3 main_NJlata.py 0.01 $eps
+simulation_NJlata.sh: line 1: 21091 Terminated              python3 main_NJlata.py 0.01 $eps
+simulation_NJlata.sh: line 1: 21107 Terminated              python3 main_NJlata.py 0.01 $eps
+[0.000000e+00 0.000000e+00 3.000000e+00 6.600000e+01 6.880000e+02
+ 4.517000e+03 2.094000e+04 7.281600e+04 1.968740e+05 4.231580e+05
+ 7.328830e+05 1.030384e+06 1.178774e+06 1.094049e+06 8.171900e+05
+ 4.903140e+05 2.451570e+05 1.009470e+05 3.364900e+04 8.855000e+03
+ 1.771000e+03 2.530000e+02 2.300000e+01 1.000000e+00]
+[1, 23, 250, 1705, 8167, 29132, 80007, 172341, 293440, 394032, 411183, 321694, 173304, 50017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+f =  0  m =  1
+[0.000000e+00 0.000000e+00 3.000000e+00 6.600000e+01 6.880000e+02
+ 4.517000e+03 2.094000e+04 7.281600e+04 1.968740e+05 4.231580e+05
+ 7.328830e+05 1.030384e+06 1.178774e+06 1.094049e+06 8.171900e+05
+ 4.903140e+05 2.451570e+05 1.009470e+05 3.364900e+04 8.855000e+03
+ 1.771000e+03 2.530000e+02 2.300000e+01 1.000000e+00]
+[1, 23, 250, 1705, 8167, 29132, 80007, 172341, 293440, 394032, 411183, 321694, 173304, 50017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+f =  1  m =  1
+[0.000000e+00 0.000000e+00 3.000000e+00 6.600000e+01 6.880000e+02
+ 4.517000e+03 2.094000e+04 7.281600e+04 1.968740e+05 4.231580e+05
+ 7.328830e+05 1.030384e+06 1.178774e+06 1.094049e+06 8.171900e+05
+ 4.903140e+05 2.451570e+05 1.009470e+05 3.364900e+04 8.855000e+03
+ 1.771000e+03 2.530000e+02 2.300000e+01 1.000000e+00]
+[1, 23, 250, 1705, 8167, 29132, 80007, 172341, 293440, 394032, 411183, 321694, 173304, 50017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+f =  1  m =  14
+Traceback (most recent call last):
+  File "main_NJlata.py", line 321, in <module>
+    r_mf = congestion_eval(G_cap,universe,cand_mf,tr,w_tmp_mf)
+  File "main_NJlata.py", line 156, in congestion_eval
+    cng_s,cng_d,r_val,congestion = calc_r(universe, i, tr, weights,G_fail)
+  File "main_NJlata.py", line 122, in calc_r
+    ospf_path_list = shortest_path(paths, weight_list)
+  File "main_NJlata.py", line 94, in shortest_path
+    s = iter.__next__()
+StopIteration
+[0.000000e+00 0.000000e+00 3.000000e+00 6.600000e+01 6.880000e+02
+ 4.517000e+03 2.094000e+04 7.281600e+04 1.968740e+05 4.231580e+05
+ 7.328830e+05 1.030384e+06 1.178774e+06 1.094049e+06 8.171900e+05
+ 4.903140e+05 2.451570e+05 1.009470e+05 3.364900e+04 8.855000e+03
+ 1.771000e+03 2.530000e+02 2.300000e+01 1.000000e+00]
+[1, 23, 250, 1705, 8167, 29132, 80007, 172341, 293440, 394032, 411183, 321694, 173304, 50017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+f =  1  m =  15
+Traceback (most recent call last):
+  File "main_NJlata.py", line 321, in <module>
+    r_mf = congestion_eval(G_cap,universe,cand_mf,tr,w_tmp_mf)
+  File "main_NJlata.py", line 156, in congestion_eval
+    cng_s,cng_d,r_val,congestion = calc_r(universe, i, tr, weights,G_fail)
+  File "main_NJlata.py", line 122, in calc_r
+    ospf_path_list = shortest_path(paths, weight_list)
+  File "main_NJlata.py", line 94, in shortest_path
+    s = iter.__next__()
+StopIteration
+[0.000000e+00 0.000000e+00 3.000000e+00 6.600000e+01 6.880000e+02
+ 4.517000e+03 2.094000e+04 7.281600e+04 1.968740e+05 4.231580e+05
+ 7.328830e+05 1.030384e+06 1.178774e+06 1.094049e+06 8.171900e+05
+ 4.903140e+05 2.451570e+05 1.009470e+05 3.364900e+04 8.855000e+03
+ 1.771000e+03 2.530000e+02 2.300000e+01 1.000000e+00]
+[1, 23, 250, 1705, 8167, 29132, 80007, 172341, 293440, 394032, 411183, 321694, 173304, 50017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+f =  1  m =  16
+Traceback (most recent call last):
+  File "main_NJlata.py", line 321, in <module>
+    r_mf = congestion_eval(G_cap,universe,cand_mf,tr,w_tmp_mf)
+  File "main_NJlata.py", line 156, in congestion_eval
+    cng_s,cng_d,r_val,congestion = calc_r(universe, i, tr, weights,G_fail)
+  File "main_NJlata.py", line 122, in calc_r
+    ospf_path_list = shortest_path(paths, weight_list)
+  File "main_NJlata.py", line 94, in shortest_path
+    s = iter.__next__()
+StopIteration
+[0.000000e+00 0.000000e+00 3.000000e+00 6.600000e+01 6.880000e+02
+ 4.517000e+03 2.094000e+04 7.281600e+04 1.968740e+05 4.231580e+05
+ 7.328830e+05 1.030384e+06 1.178774e+06 1.094049e+06 8.171900e+05
+ 4.903140e+05 2.451570e+05 1.009470e+05 3.364900e+04 8.855000e+03
+ 1.771000e+03 2.530000e+02 2.300000e+01 1.000000e+00]
+[1, 23, 250, 1705, 8167, 29132, 80007, 172341, 293440, 394032, 411183, 321694, 173304, 50017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+f =  1  m =  18
+Traceback (most recent call last):
+  File "main_NJlata.py", line 321, in <module>
+    r_mf = congestion_eval(G_cap,universe,cand_mf,tr,w_tmp_mf)
+  File "main_NJlata.py", line 156, in congestion_eval
+    cng_s,cng_d,r_val,congestion = calc_r(universe, i, tr, weights,G_fail)
+  File "main_NJlata.py", line 122, in calc_r
+    ospf_path_list = shortest_path(paths, weight_list)
+  File "main_NJlata.py", line 94, in shortest_path
+    s = iter.__next__()
+StopIteration
+[0.000000e+00 0.000000e+00 3.000000e+00 6.600000e+01 6.880000e+02
+ 4.517000e+03 2.094000e+04 7.281600e+04 1.968740e+05 4.231580e+05
+ 7.328830e+05 1.030384e+06 1.178774e+06 1.094049e+06 8.171900e+05
+ 4.903140e+05 2.451570e+05 1.009470e+05 3.364900e+04 8.855000e+03
+ 1.771000e+03 2.530000e+02 2.300000e+01 1.000000e+00]
+[1, 23, 250, 1705, 8167, 29132, 80007, 172341, 293440, 394032, 411183, 321694, 173304, 50017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+f =  1  m =  19
+Traceback (most recent call last):
+  File "main_NJlata.py", line 321, in <module>
+    r_mf = congestion_eval(G_cap,universe,cand_mf,tr,w_tmp_mf)
+  File "main_NJlata.py", line 156, in congestion_eval
+    cng_s,cng_d,r_val,congestion = calc_r(universe, i, tr, weights,G_fail)
+  File "main_NJlata.py", line 122, in calc_r
+    ospf_path_list = shortest_path(paths, weight_list)
+  File "main_NJlata.py", line 94, in shortest_path
+    s = iter.__next__()
+StopIteration
+[0.000000e+00 0.000000e+00 3.000000e+00 6.600000e+01 6.880000e+02
+ 4.517000e+03 2.094000e+04 7.281600e+04 1.968740e+05 4.231580e+05
+ 7.328830e+05 1.030384e+06 1.178774e+06 1.094049e+06 8.171900e+05
+ 4.903140e+05 2.451570e+05 1.009470e+05 3.364900e+04 8.855000e+03
+ 1.771000e+03 2.530000e+02 2.300000e+01 1.000000e+00]
+[1, 23, 250, 1705, 8167, 29132, 80007, 172341, 293440, 394032, 411183, 321694, 173304, 50017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+f =  1  m =  20
+Traceback (most recent call last):
+  File "main_NJlata.py", line 321, in <module>
+    r_mf = congestion_eval(G_cap,universe,cand_mf,tr,w_tmp_mf)
+  File "main_NJlata.py", line 156, in congestion_eval
+    cng_s,cng_d,r_val,congestion = calc_r(universe, i, tr, weights,G_fail)
+  File "main_NJlata.py", line 122, in calc_r
+    ospf_path_list = shortest_path(paths, weight_list)
+  File "main_NJlata.py", line 94, in shortest_path
+    s = iter.__next__()
+StopIteration
+[0.000000e+00 0.000000e+00 3.000000e+00 6.600000e+01 6.880000e+02
+ 4.517000e+03 2.094000e+04 7.281600e+04 1.968740e+05 4.231580e+05
+ 7.328830e+05 1.030384e+06 1.178774e+06 1.094049e+06 8.171900e+05
+ 4.903140e+05 2.451570e+05 1.009470e+05 3.364900e+04 8.855000e+03
+ 1.771000e+03 2.530000e+02 2.300000e+01 1.000000e+00]
+[1, 23, 250, 1705, 8167, 29132, 80007, 172341, 293440, 394032, 411183, 321694, 173304, 50017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+f =  1  m =  21
+Traceback (most recent call last):
+  File "main_NJlata.py", line 321, in <module>
+    r_mf = congestion_eval(G_cap,universe,cand_mf,tr,w_tmp_mf)
+  File "main_NJlata.py", line 156, in congestion_eval
+    cng_s,cng_d,r_val,congestion = calc_r(universe, i, tr, weights,G_fail)
+  File "main_NJlata.py", line 122, in calc_r
+    ospf_path_list = shortest_path(paths, weight_list)
+  File "main_NJlata.py", line 94, in shortest_path
+    s = iter.__next__()
+StopIteration
+[0.000000e+00 0.000000e+00 3.000000e+00 6.600000e+01 6.880000e+02
+ 4.517000e+03 2.094000e+04 7.281600e+04 1.968740e+05 4.231580e+05
+ 7.328830e+05 1.030384e+06 1.178774e+06 1.094049e+06 8.171900e+05
+ 4.903140e+05 2.451570e+05 1.009470e+05 3.364900e+04 8.855000e+03
+ 1.771000e+03 2.530000e+02 2.300000e+01 1.000000e+00]
+[1, 23, 250, 1705, 8167, 29132, 80007, 172341, 293440, 394032, 411183, 321694, 173304, 50017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+f =  1  m =  23
+Traceback (most recent call last):
+  File "main_NJlata.py", line 321, in <module>
+    r_mf = congestion_eval(G_cap,universe,cand_mf,tr,w_tmp_mf)
+  File "main_NJlata.py", line 156, in congestion_eval
+    cng_s,cng_d,r_val,congestion = calc_r(universe, i, tr, weights,G_fail)
+  File "main_NJlata.py", line 122, in calc_r
+    ospf_path_list = shortest_path(paths, weight_list)
+  File "main_NJlata.py", line 94, in shortest_path
+    s = iter.__next__()
+StopIteration
+[0.000000e+00 0.000000e+00 3.000000e+00 6.600000e+01 6.880000e+02
+ 4.517000e+03 2.094000e+04 7.281600e+04 1.968740e+05 4.231580e+05
+ 7.328830e+05 1.030384e+06 1.178774e+06 1.094049e+06 8.171900e+05
+ 4.903140e+05 2.451570e+05 1.009470e+05 3.364900e+04 8.855000e+03
+ 1.771000e+03 2.530000e+02 2.300000e+01 1.000000e+00]
+[1, 23, 250, 1705, 8167, 29132, 80007, 172341, 293440, 394032, 411183, 321694, 173304, 50017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+f =  2  m =  25
+Traceback (most recent call last):
+  File "main_NJlata.py", line 321, in <module>
+    r_mf = congestion_eval(G_cap,universe,cand_mf,tr,w_tmp_mf)
+  File "main_NJlata.py", line 156, in congestion_eval
+    cng_s,cng_d,r_val,congestion = calc_r(universe, i, tr, weights,G_fail)
+  File "main_NJlata.py", line 122, in calc_r
+    ospf_path_list = shortest_path(paths, weight_list)
+  File "main_NJlata.py", line 94, in shortest_path
+    s = iter.__next__()
+StopIteration
+[0.000000e+00 0.000000e+00 3.000000e+00 6.600000e+01 6.880000e+02
+ 4.517000e+03 2.094000e+04 7.281600e+04 1.968740e+05 4.231580e+05
+ 7.328830e+05 1.030384e+06 1.178774e+06 1.094049e+06 8.171900e+05
+ 4.903140e+05 2.451570e+05 1.009470e+05 3.364900e+04 8.855000e+03
+ 1.771000e+03 2.530000e+02 2.300000e+01 1.000000e+00]
+[1, 23, 250, 1705, 8167, 29132, 80007, 172341, 293440, 394032, 411183, 321694, 173304, 50017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+f =  2  m =  149
+Traceback (most recent call last):
+  File "main_NJlata.py", line 321, in <module>
+    r_mf = congestion_eval(G_cap,universe,cand_mf,tr,w_tmp_mf)
+  File "main_NJlata.py", line 156, in congestion_eval
+    cng_s,cng_d,r_val,congestion = calc_r(universe, i, tr, weights,G_fail)
+  File "main_NJlata.py", line 122, in calc_r
+    ospf_path_list = shortest_path(paths, weight_list)
+  File "main_NJlata.py", line 94, in shortest_path
+    s = iter.__next__()
+StopIteration
+[0.000000e+00 0.000000e+00 3.000000e+00 6.600000e+01 6.880000e+02
+ 4.517000e+03 2.094000e+04 7.281600e+04 1.968740e+05 4.231580e+05
+ 7.328830e+05 1.030384e+06 1.178774e+06 1.094049e+06 8.171900e+05
+ 4.903140e+05 2.451570e+05 1.009470e+05 3.364900e+04 8.855000e+03
+ 1.771000e+03 2.530000e+02 2.300000e+01 1.000000e+00]
+[1, 23, 250, 1705, 8167, 29132, 80007, 172341, 293440, 394032, 411183, 321694, 173304, 50017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+f =  2  m =  161
+Traceback (most recent call last):
+  File "main_NJlata.py", line 321, in <module>
+    r_mf = congestion_eval(G_cap,universe,cand_mf,tr,w_tmp_mf)
+  File "main_NJlata.py", line 156, in congestion_eval
+    cng_s,cng_d,r_val,congestion = calc_r(universe, i, tr, weights,G_fail)
+  File "main_NJlata.py", line 122, in calc_r
+    ospf_path_list = shortest_path(paths, weight_list)
+  File "main_NJlata.py", line 94, in shortest_path
+    s = iter.__next__()
+StopIteration
+[0.000000e+00 0.000000e+00 3.000000e+00 6.600000e+01 6.880000e+02
+ 4.517000e+03 2.094000e+04 7.281600e+04 1.968740e+05 4.231580e+05
+ 7.328830e+05 1.030384e+06 1.178774e+06 1.094049e+06 8.171900e+05
+ 4.903140e+05 2.451570e+05 1.009470e+05 3.364900e+04 8.855000e+03
+ 1.771000e+03 2.530000e+02 2.300000e+01 1.000000e+00]
+[1, 23, 250, 1705, 8167, 29132, 80007, 172341, 293440, 394032, 411183, 321694, 173304, 50017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+f =  2  m =  174
+Traceback (most recent call last):
+  File "main_NJlata.py", line 321, in <module>
+    r_mf = congestion_eval(G_cap,universe,cand_mf,tr,w_tmp_mf)
+  File "main_NJlata.py", line 156, in congestion_eval
+    cng_s,cng_d,r_val,congestion = calc_r(universe, i, tr, weights,G_fail)
+  File "main_NJlata.py", line 122, in calc_r
+    ospf_path_list = shortest_path(paths, weight_list)
+  File "main_NJlata.py", line 94, in shortest_path
+    s = iter.__next__()
+StopIteration
+[0.000000e+00 0.000000e+00 3.000000e+00 6.600000e+01 6.880000e+02
+ 4.517000e+03 2.094000e+04 7.281600e+04 1.968740e+05 4.231580e+05
+ 7.328830e+05 1.030384e+06 1.178774e+06 1.094049e+06 8.171900e+05
+ 4.903140e+05 2.451570e+05 1.009470e+05 3.364900e+04 8.855000e+03
+ 1.771000e+03 2.530000e+02 2.300000e+01 1.000000e+00]
+[1, 23, 250, 1705, 8167, 29132, 80007, 172341, 293440, 394032, 411183, 321694, 173304, 50017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+f =  2  m =  186
+Traceback (most recent call last):
+  File "main_NJlata.py", line 321, in <module>
+    r_mf = congestion_eval(G_cap,universe,cand_mf,tr,w_tmp_mf)
+  File "main_NJlata.py", line 156, in congestion_eval
+    cng_s,cng_d,r_val,congestion = calc_r(universe, i, tr, weights,G_fail)
+  File "main_NJlata.py", line 122, in calc_r
+    ospf_path_list = shortest_path(paths, weight_list)
+  File "main_NJlata.py", line 94, in shortest_path
+    s = iter.__next__()
+StopIteration
+[0.000000e+00 0.000000e+00 3.000000e+00 6.600000e+01 6.880000e+02
+ 4.517000e+03 2.094000e+04 7.281600e+04 1.968740e+05 4.231580e+05
+ 7.328830e+05 1.030384e+06 1.178774e+06 1.094049e+06 8.171900e+05
+ 4.903140e+05 2.451570e+05 1.009470e+05 3.364900e+04 8.855000e+03
+ 1.771000e+03 2.530000e+02 2.300000e+01 1.000000e+00]
+[1, 23, 250, 1705, 8167, 29132, 80007, 172341, 293440, 394032, 411183, 321694, 173304, 50017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+f =  2  m =  198
+Traceback (most recent call last):
+  File "main_NJlata.py", line 321, in <module>
+    r_mf = congestion_eval(G_cap,universe,cand_mf,tr,w_tmp_mf)
+  File "main_NJlata.py", line 156, in congestion_eval
+    cng_s,cng_d,r_val,congestion = calc_r(universe, i, tr, weights,G_fail)
+  File "main_NJlata.py", line 122, in calc_r
+    ospf_path_list = shortest_path(paths, weight_list)
+  File "main_NJlata.py", line 94, in shortest_path
+    s = iter.__next__()
+StopIteration
+[0.000000e+00 0.000000e+00 3.000000e+00 6.600000e+01 6.880000e+02
+ 4.517000e+03 2.094000e+04 7.281600e+04 1.968740e+05 4.231580e+05
+ 7.328830e+05 1.030384e+06 1.178774e+06 1.094049e+06 8.171900e+05
+ 4.903140e+05 2.451570e+05 1.009470e+05 3.364900e+04 8.855000e+03
+ 1.771000e+03 2.530000e+02 2.300000e+01 1.000000e+00]
+[1, 23, 250, 1705, 8167, 29132, 80007, 172341, 293440, 394032, 411183, 321694, 173304, 50017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+f =  2  m =  211
+Traceback (most recent call last):
+  File "main_NJlata.py", line 321, in <module>
+    r_mf = congestion_eval(G_cap,universe,cand_mf,tr,w_tmp_mf)
+  File "main_NJlata.py", line 156, in congestion_eval
+    cng_s,cng_d,r_val,congestion = calc_r(universe, i, tr, weights,G_fail)
+  File "main_NJlata.py", line 122, in calc_r
+    ospf_path_list = shortest_path(paths, weight_list)
+  File "main_NJlata.py", line 94, in shortest_path
+    s = iter.__next__()
+StopIteration
+[0.000000e+00 0.000000e+00 3.000000e+00 6.600000e+01 6.880000e+02
+ 4.517000e+03 2.094000e+04 7.281600e+04 1.968740e+05 4.231580e+05
+ 7.328830e+05 1.030384e+06 1.178774e+06 1.094049e+06 8.171900e+05
+ 4.903140e+05 2.451570e+05 1.009470e+05 3.364900e+04 8.855000e+03
+ 1.771000e+03 2.530000e+02 2.300000e+01 1.000000e+00]
+[1, 23, 250, 1705, 8167, 29132, 80007, 172341, 293440, 394032, 411183, 321694, 173304, 50017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+f =  2  m =  223
+Traceback (most recent call last):
+  File "main_NJlata.py", line 321, in <module>
+    r_mf = congestion_eval(G_cap,universe,cand_mf,tr,w_tmp_mf)
+  File "main_NJlata.py", line 156, in congestion_eval
+    cng_s,cng_d,r_val,congestion = calc_r(universe, i, tr, weights,G_fail)
+  File "main_NJlata.py", line 122, in calc_r
+    ospf_path_list = shortest_path(paths, weight_list)
+  File "main_NJlata.py", line 94, in shortest_path
+    s = iter.__next__()
+StopIteration
+[0.000000e+00 0.000000e+00 3.000000e+00 6.600000e+01 6.880000e+02
+ 4.517000e+03 2.094000e+04 7.281600e+04 1.968740e+05 4.231580e+05
+ 7.328830e+05 1.030384e+06 1.178774e+06 1.094049e+06 8.171900e+05
+ 4.903140e+05 2.451570e+05 1.009470e+05 3.364900e+04 8.855000e+03
+ 1.771000e+03 2.530000e+02 2.300000e+01 1.000000e+00]
+[1, 23, 250, 1705, 8167, 29132, 80007, 172341, 293440, 394032, 411183, 321694, 173304, 50017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+f =  2  m =  235
+Traceback (most recent call last):
+  File "main_NJlata.py", line 321, in <module>
+    r_mf = congestion_eval(G_cap,universe,cand_mf,tr,w_tmp_mf)
+  File "main_NJlata.py", line 156, in congestion_eval
+    cng_s,cng_d,r_val,congestion = calc_r(universe, i, tr, weights,G_fail)
+  File "main_NJlata.py", line 122, in calc_r
+    ospf_path_list = shortest_path(paths, weight_list)
+  File "main_NJlata.py", line 94, in shortest_path
+    s = iter.__next__()
+StopIteration
+[0.000000e+00 0.000000e+00 3.000000e+00 6.600000e+01 6.880000e+02
+ 4.517000e+03 2.094000e+04 7.281600e+04 1.968740e+05 4.231580e+05
+ 7.328830e+05 1.030384e+06 1.178774e+06 1.094049e+06 8.171900e+05
+ 4.903140e+05 2.451570e+05 1.009470e+05 3.364900e+04 8.855000e+03
+ 1.771000e+03 2.530000e+02 2.300000e+01 1.000000e+00]
+[1, 23, 250, 1705, 8167, 29132, 80007, 172341, 293440, 394032, 411183, 321694, 173304, 50017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+f =  2  m =  248
+Traceback (most recent call last):
+  File "main_NJlata.py", line 321, in <module>
+    r_mf = congestion_eval(G_cap,universe,cand_mf,tr,w_tmp_mf)
+  File "main_NJlata.py", line 156, in congestion_eval
+    cng_s,cng_d,r_val,congestion = calc_r(universe, i, tr, weights,G_fail)
+  File "main_NJlata.py", line 122, in calc_r
+    ospf_path_list = shortest_path(paths, weight_list)
+  File "main_NJlata.py", line 94, in shortest_path
+    s = iter.__next__()
+StopIteration
+[0.000000e+00 0.000000e+00 3.000000e+00 6.600000e+01 6.880000e+02
+ 4.517000e+03 2.094000e+04 7.281600e+04 1.968740e+05 4.231580e+05
+ 7.328830e+05 1.030384e+06 1.178774e+06 1.094049e+06 8.171900e+05
+ 4.903140e+05 2.451570e+05 1.009470e+05 3.364900e+04 8.855000e+03
+ 1.771000e+03 2.530000e+02 2.300000e+01 1.000000e+00]
+[1, 23, 250, 1705, 8167, 29132, 80007, 172341, 293440, 394032, 411183, 321694, 173304, 50017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+f =  2  m =  250
+Traceback (most recent call last):
+  File "main_NJlata.py", line 321, in <module>
+    r_mf = congestion_eval(G_cap,universe,cand_mf,tr,w_tmp_mf)
+  File "main_NJlata.py", line 156, in congestion_eval
+    cng_s,cng_d,r_val,congestion = calc_r(universe, i, tr, weights,G_fail)
+  File "main_NJlata.py", line 122, in calc_r
+    ospf_path_list = shortest_path(paths, weight_list)
+  File "main_NJlata.py", line 94, in shortest_path
+    s = iter.__next__()
+StopIteration
+[0.000000e+00 0.000000e+00 3.000000e+00 6.600000e+01 6.880000e+02
+ 4.517000e+03 2.094000e+04 7.281600e+04 1.968740e+05 4.231580e+05
+ 7.328830e+05 1.030384e+06 1.178774e+06 1.094049e+06 8.171900e+05
+ 4.903140e+05 2.451570e+05 1.009470e+05 3.364900e+04 8.855000e+03
+ 1.771000e+03 2.530000e+02 2.300000e+01 1.000000e+00]
+[1, 23, 250, 1705, 8167, 29132, 80007, 172341, 293440, 394032, 411183, 321694, 173304, 50017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+f =  3  m =  939
+Traceback (most recent call last):
+  File "main_NJlata.py", line 321, in <module>
+    r_mf = congestion_eval(G_cap,universe,cand_mf,tr,w_tmp_mf)
+  File "main_NJlata.py", line 156, in congestion_eval
+    cng_s,cng_d,r_val,congestion = calc_r(universe, i, tr, weights,G_fail)
+  File "main_NJlata.py", line 122, in calc_r
+    ospf_path_list = shortest_path(paths, weight_list)
+  File "main_NJlata.py", line 94, in shortest_path
+    s = iter.__next__()
+StopIteration

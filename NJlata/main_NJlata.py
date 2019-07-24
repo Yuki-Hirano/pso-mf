@@ -85,19 +85,22 @@ def shortest_path(path_graphset, weight_dic):
     #     print(i)
     # print(iter.len())
     # print('path number',path_graphset.len())
+    cnt=path_graphset.len()
+    # print('cnt',cnt)
     s1 = iter.__next__()
     path_list.append(s1)
-    if path_graphset.len()>1:
-        min_weight = count_weight(s1,weight_dic)
-        # print(min_weight)
-        while(True):
-            s = iter.__next__()
-            total_weight = count_weight(s,weight_dic)
-            # print(total_weight)
-            if total_weight==min_weight:
-                path_list.append(s)
-            else:
-                 break
+    cnt -= 1
+    min_weight = count_weight(s1,weight_dic)
+    # print('min_weight',min_weight)
+    while(cnt>0):
+        s = iter.__next__()
+        cnt -= 1
+        total_weight = count_weight(s,weight_dic)
+        # print('weight',total_weight)
+        if total_weight==min_weight:
+            path_list.append(s)
+        else:
+             break
     return path_list
 
 def count_weight(path, weight_dic):
@@ -246,7 +249,7 @@ for i in range(50):
 #---------Setting failure patterns---------------
 f = calc_f(nk,p,eps)
 m_np = calc_mnp(nk,f,p,eps)
-# print("f = ", f, " m = ", m_np)
+print("f = ", f, " m = ", m_np)
 # file = open('output.txt','a')
 # file.write("p ={0}, eps = {1}, f = {2}, m = {3}　\n".format(p, eps, f, m_np))
 # file.close()
@@ -513,7 +516,7 @@ ecution_time = time.perf_counter() - start_time
 data = [eps,f,m_np,cand_mf.len(),alpha_mf,alpha_so,alpha,beta_mf,beta_so,beta,ecution_time]
 # print(data)
 data_str = ','.join(map(str,data))
-file_path = './resultNJlata_{0}_i{1}_c{2}_tr{3}_fix_2.txt'.format(str(p).split('.')[1],I_max,C_max,len(tr))
+file_path = './resultNJlata_{0}_i{1}_c{2}_tr{3}_fix_3.txt'.format(str(p).split('.')[1],I_max,C_max,len(tr))
 with open(file_path,'a',encoding="utf-8") as f:
     f.write(data_str)
     f.write('\n')
